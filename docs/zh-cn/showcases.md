@@ -43,4 +43,4 @@ description: 模组介绍视频！
 
 </div>
 
-想在这里展示你的作品？在评论区，或 [Mastodon](https://mstdn.social/@melontini) 上告诉我！
+想在这里展示你的作品？在评论区，或 [Mastodon](https://merping.synth.download/@zen) 上告诉我！

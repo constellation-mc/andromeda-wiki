@@ -8,8 +8,8 @@ description: 群星模组维基
 
 <div class="badge-holder">
 
-[![可在 Modrinth 下载](https://raw.githubusercontent.com/melontini/mini-badges/main/minecraft/modrinth.svg)](https://modrinth.com/mod/andromeda)
-[![可在 CurseForge 下载](https://raw.githubusercontent.com/melontini/mini-badges/main/minecraft/curseforge.svg)](https://www.curseforge.com/minecraft/mc-mods/andromeda)
+[![可在 Modrinth 下载](https://raw.githubusercontent.com/zenfyrdev/mini-badges/main/minecraft/modrinth.svg)](https://modrinth.com/mod/andromeda)
+[![可在 CurseForge 下载](https://raw.githubusercontent.com/zenfyrdev/mini-badges/main/minecraft/curseforge.svg)](https://www.curseforge.com/minecraft/mc-mods/andromeda)
 
 </div>
 
@@ -23,7 +23,7 @@ description: 群星模组维基
 
 <br/>
 
-如果你想建议某个特性，别犹豫，发在这里吧：[讨论页面](https://github.com/melontini/andromeda/discussions/categories/ideas)！
+如果你想建议某个特性，别犹豫，发在这里吧：[讨论页面](https://github.com/constellation-mc/andromeda/discussions/categories/ideas)！
 
 **别忘了看看[模组介绍](/zh-cn/showcases)！** 
 
@@ -37,10 +37,8 @@ description: 群星模组维基
 切记！
 :::
 
-你可以在这里 [GitHub](https://github.com/melontini/andromeda-wiki) 帮助翻译这个维基！
+你可以在这里 [GitHub](https://github.com/constellation-mc/andromeda-wiki) 帮助翻译这个维基！
 
 ***
 
-`本网站使用 Cloudflare Web Analytics 进行网站监控。`
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://raw.githubusercontent.com/melontini/mini-badges/main/licenses/cc/CC-BY-NC-SA-4.0.svg" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">群星模组维基</span>由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/melontini/andromeda-wiki" property="cc:attributionName" rel="cc:attributionURL">melontini 及其他模组贡献者</a>创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> 授权。
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://raw.githubusercontent.com/zenfyrdev/mini-badges/main/licenses/cc/CC-BY-NC-SA-4.0.svg" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">群星模组维基</span>由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/constellation-mc/andromeda-wiki" property="cc:attributionName" rel="cc:attributionURL">zenfyr 及其他模组贡献者</a>创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> 授权。

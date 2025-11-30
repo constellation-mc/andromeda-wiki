@@ -12,10 +12,10 @@ Currently, makes ghast explode upon death.
 
 ::: details configuration
 
-| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-|---------|-------------|-------------|
-| `explodeOnDeath` | Should ghast explode upon death? | ✅ |
-| `explosionPower` | Ghast explosion power. | ✅ |
+| Config  | Description |
+|---------|-------------
+| `explodeOnDeath` | Should ghast explode upon death? |
+| `explosionPower` | Ghast explosion power. |
 
 :::
 
@@ -37,11 +37,11 @@ Not all modded minecart types are supported!
 
 ::: details configuration
 
-| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-|---------|-------------|-------------|
-| `modifier` | Speed modifier for most minecarts. | ✅ |
-| `furnaceModifier` | Speed modifier for furnace minecarts. | ✅ |
-| `additionalFurnaceFuel` | Fuel consumption modifier for furnace minecarts | ✅ |
+| Config  | Description |
+|---------|-------------|
+| `modifier` | Speed modifier for most minecarts. |
+| `furnaceModifier` | Speed modifier for furnace minecarts. |
+| `additionalFurnaceFuel` | Fuel consumption modifier for furnace minecarts |
 
 :::
 
@@ -89,9 +89,9 @@ When a bee pollinates a flower, the flower has a chance to spread, much like gra
 
 ::: details configuration
 
-| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-|---------|-------------|-------------|
-| `tallFlowers` | Enable the tweak for tall flowers. Also removes the default flower duplication method. | ✅ |
+| Config  | Description |
+|---------|-------------|
+| `tallFlowers` | Enable the tweak for tall flowers. Also removes the default flower duplication method. |
 
 :::
 

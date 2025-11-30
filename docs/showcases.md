@@ -43,4 +43,4 @@ An immersive, artistic, yet performant modpack.
 
 </div>
 
-Would you like to see your project/content here? Leave it in the comments below or contact me at [Mastodon](https://mstdn.social/@melontini)!
+Using Andromeda in a project? Contact [zenfyr](https://zenfyr.dev/contact/) to have the project added to this page!

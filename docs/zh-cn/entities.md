@@ -12,10 +12,10 @@ description: 实体相关调整
 
 ::: details configuration
 
-| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
-|---------|-------------|-------------|
-| `explodeOnDeath` | 恶魂是否在死亡时爆炸？ | ✅ |
-| `explosionPower` | 恶魂爆炸的强度。 | ✅ |
+| 配置项  | 描述 |
+|---------|-------------|
+| `explodeOnDeath` | 恶魂是否在死亡时爆炸？ |
+| `explosionPower` | 恶魂爆炸的强度。 |
 
 :::
 
@@ -27,11 +27,11 @@ description: 实体相关调整
 
 ::: details configuration
 
-| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
-|---------|-------------|-------------|
-| `modifier` | 矿车速度的调整数。 | ✅ |
-| `furnaceModifier` | 动力矿车速度的调整数。 | ✅ |
-| `additionalFurnaceFuel` | 动力矿车燃料消耗的调整数。 | ✅ |
+| 配置项  | 描述 |
+|---------|-------------|
+| `modifier` | 矿车速度的调整数。 |
+| `furnaceModifier` | 动力矿车速度的调整数。 |
+| `additionalFurnaceFuel` | 动力矿车燃料消耗的调整数。 |
 
 :::
 
@@ -89,9 +89,9 @@ description: 实体相关调整
 
 ::: details configuration
 
-| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
-|---------|-------------|-------------|
-| `tallFlowers` | 为两格高的花朵启用调整，同时移除默认的花朵催生方法。 | ✅ |
+| 配置项  | 描述 |
+|---------|-------------|
+| `tallFlowers` | 为两格高的花朵启用调整，同时移除默认的花朵催生方法。 |
 
 :::
 
