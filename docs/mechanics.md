@@ -6,6 +6,26 @@ description: Things and stuff idk
 
 # Mechanics
 
+## Linkart <Badge type="tip" text="^2.0.0" />
+
+Allows linking minecarts together via chains. if this sounds familiar, this is [Linkart](https://www.curseforge.com/minecraft/mc-mods/linkart-updated) merged into Andromeda.
+
+To link two minecarts, sneak+use on the parent minecart with a chain, then sneak+use on the child cart, now the child will follow its parent.
+
+This option adds an `andromeda:linkers` tag, to allow using chains from other mods.
+
+::: details configuration
+
+| Config  | Description |
+|---------|-------------|
+| `pathfindingDistance` | The maximum distance a cart will follow its parent for. Carts will break apart if their distance is greater. |
+| `velocityMultiplier` | Multiplies the speed of the following cart. |
+| `distance` | The minimum spacing between carts. |
+| `chunkloading` | Linked carts will load chunks as they move. |
+| `chunkloadingRadius` | The radius of chunks that a given cart will load. |
+
+:::
+
 ## Villager Gifting 🎁 <Badge type="tip" text="^0.9.0" />
 
 Restore some reputation by giving gifts to villagers!
@@ -16,7 +36,7 @@ This option adds 4 new tags:
 * `andromeda:villager_gifts/major_negative` takes 15 reputation
 * `andromeda:villager_gifts/minor_negative` takes 3 reputation
 
-You can see default items here: [andromeda/tags/items/villager_gifts/](https://github.com/melontini/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts)
+The defaults can be found here: [andromeda/tags/items/villager_gifts/](https://github.com/constellation-mc/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts)
 
 ## Dragon Fight Tweaks 🐉 <Badge type="tip" text="^0.6.0" />
 
@@ -37,86 +57,6 @@ Reduce the range in which the dragon can heal itself with crystals from 32 block
 ### 4. Shorter Spikes
 
 All newly generated spikes will be shorter.
-
-## Throwable Items 🥏 <Badge type="tip" text="^0.5.0" /> 
-[![Requires Commander](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
-
-Throw certain items, which would otherwise be useless*
-
-::: details Throwable items as of 0.5.0
-
-
-* Bone Meal
-* Glowing and Normal Ink Sacs
-* All Dyes
-* Nether and Normal Bricks
-* Fire Charge
-* Gun Powder
-
-Ideas welcome! 
-
-:::
-
-There's an additional option available: Can Zombies Throw Items?
-
-With this on, zombies will throw any throwable items they pick up.
-
-::: details Adding Custom Behaviors
-
-All behaviors must be placed in `andromeda/item_throw_behavior` of your datapack, along with `recipes`, `tags`, `loot_tables`, etc. The name of the file doesn't matter.
-
-Since 1.10.0, Andromeda uses [Commander](https://modrinth.com/mod/cmd) for its data pack features. You can learn about commands, Arithmetica and more over at its wiki. https://constellation-mc.github.io/commander/
-
-Example:
-
-```json
-{
-  "items": "minecraft:ink_sac",
-  "complement": true,
-  "events": [
-    {
-      "event": "any",
-      "commands": {
-        "type": "andromeda:particles",
-        "selector": "minecraft:direct_killer_entity",
-        "colors": [24, 27, 50]
-      }
-    },
-    {
-      "event": "entity",
-      "commands": {
-        "type": "commander:commands",
-        "selector": "minecraft:this_entity",
-        "commands": [
-          "/effect give @s minecraft:blindness $(long){{random(4, 7)}} 0 true"
-        ]
-      }
-    }
-  ]
-}
-```
-
-`events` is a list of mini subscriptions to flying entity events.
-
-| Event  |   |
-|---|---|
-| `block`  | Executed when the item hits a block.  |
-| `entity`  | Executed when the item hits an entity.  |
-| `miss`  | Executed when the item misses.  |
-| `any`  | Executed after any of the previous events.  |
-
-`commands` is a list of [Commander commands](https://constellation-mc.github.io/commander/Commands).
-
-Other things:
-
-| Parameter  |   |
-|---|---|
-| `override_vanilla`  | If true, prevents **ALL** vanilla behaviors from being executed. This should never be used on block items, as it will make the block unplaceable.  |
-| `disabled`  | Disables all behaviors for this item.  |
-| `complement`  | If false, disables all other behaviors.  |
-| `cooldown`  | Set a custom cooldown for your item (in ticks). Accepts numbers and [Expressions](https://constellation-mc.github.io/commander/Expressions)  |
-
-:::
 
 ## Wandering Trader Horn 🐐 <Badge type="tip" text="^0.4" />
 

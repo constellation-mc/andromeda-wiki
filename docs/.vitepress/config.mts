@@ -29,7 +29,7 @@ export default defineConfig({
     logo: { src: '/logo.png', width: 24, height: 24 },
 
     editLink: {
-      pattern: 'https://github.com/melontini/andromeda-wiki/edit/main/docs/:path'
+      pattern: 'https://github.com/constellation-mc/andromeda-wiki/edit/main/docs/:path'
     },
 
     socialLinks: [

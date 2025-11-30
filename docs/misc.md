@@ -38,51 +38,6 @@ Download latest translations directly from GitHub.
 
 This will download, if available, your currently selected language and EN-US.
 
-## Send Crash Reports 📑
-
-Upload client crash reports, only if `andromeda` is found in the trace.
-
-Uploaded data:
-- Environment (e.g. client), 
-- OS version (e.g. Windows 11), 
-- Platform (e.g. Fabric), 
-- Java (e.g. 17 Oracle Corp), 
-- Bootstrap status (e.g Discovery), 
-- Certain loaded mods.
-
-::: tip Info
-Data is sent to Mixpanel EU servers. Unlike analytical data, this data doesn't have a unique ID attached. Everything is sent to a singular Crash UUID (`be4db047-16df-4e41-9121-f1e87618ddea`)
-:::
-
-## Config Expressions 👩‍💻 <Badge type="tip" text="^1.12.0" />
-[![Requires Commander](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
-
-With the new config system introduced in 1.12.0, Andromeda gained support for Commander expressions right in the config. In most cases only `game` configs support expressions.
-
-::: warning Important!
-
-Even though all expression fields accept values with a floating point, in some cases the point will be truncated! (e.g. `4.0` -> `4`)
-
-:::
-
-This allows you to replace a bunch of boolean toggles and number values with expressions. For example:
-
-```json
-{
-  "bootstrap": {
-    "enabled": true,
-    "scope": "DIMENSION"
-  },
-  "game": {
-    "modifier": "if(level.isRaining, 0.7, 1)",
-    "furnaceModifier": "if(level.isRaining, 0.7, 1)",
-    "additionalFurnaceFuel": 0.0,
-    "available": true
-  }
-}
-```
-
-
 ## Data Pack Configs 🧩 <Badge type="tip" text="^1.4.0" />
 
 Datapack configs work similarly to recipes, but instead of the path being your recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
@@ -113,7 +68,7 @@ Andromeda 1.4.2 introduces `andromeda:default`. A special key that is applied to
     "available": false
   },
   "minecraft:the_end": {
-    "available": "level.storage.custom_condition"
+    "available": true
   }
 }
 ```
