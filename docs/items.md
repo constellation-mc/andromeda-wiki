@@ -60,7 +60,7 @@ As of 0.7.0 you can pick:
 
 :::
 
-## Slightly Better Item Names ⚒⛏ <Badge type="tip" text="^0.4.5" />
+## Informative Item Names ⚒⛏ <Badge type="tip" text="^0.4.5" />
 
 Show item durability (in %) if durability is < 100% or item count if count is > 1
 
@@ -91,9 +91,9 @@ Now throw a nether star and a totem onto the beacon and watch them ascend.
 
 You can also disable ascension in the config and create your own way to get the totem!
 
-## Balanced Mending ⚒️ <Badge type="tip" text="^0.4" />
+## Mending Tweaks ⚒️ <Badge type="tip" text="^0.4" />
 
-Balances mending a bit, by making it remove the "Too Expensive" error instead of repairing items via XP.
+Tweaks mending by making it remove the "Too Expensive" error instead of repairing items via XP.
 
 Also sets anvil's XP cap to 40 levels, but not really because the cap is 40 + the amount of repair items.
 
@@ -109,4 +109,3 @@ For the sake of balance, you can configure whether players can "pick up" spawner
   <source src="/videos/minecart-block-picking.webm" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-

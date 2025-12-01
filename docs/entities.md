@@ -101,15 +101,15 @@ Villagers will follow you when you have an emerald block in your hand.
 
 You can specify additional items using the `andromeda:tempting_for_villagers` tag.
 
-## Better Furnace Minecart 🛤️ <Badge type="tip" text="^0.1" />
+## Furnace Minecart Tweaks🛤️ <Badge type="tip" text="^0.1" />
 
-A few tweaks to make furnace minecarts just a bit better
+A few tweaks to make furnace minecarts just a bit more useful
 
-- You can now configure the max fuel allowed for the cart. (45000 by default, 2147483647 max)
-- The same fuel you can use in a normal furnace can now be used in minecarts with a furnace.
+- The max fuel a furnace cart can store is configurable. (45000 by default, 2147483647 max)
+- Any fuel that works in a regular furnace can be used with the furnace minecart.
 
 Optionally, Furnace minecarts will take fuel from nearby inventory carts, such as minecarts with chests, hoppers and possibly modded ones.
-If a cart has stopped, you have to push it with your hand before it moves.
+If a cart has stopped, it has to be pushed before it moves.
 
 ## New Minecarts 🛤️ <Badge type="tip" text="^0.1" />
 

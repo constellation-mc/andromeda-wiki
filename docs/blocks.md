@@ -21,7 +21,7 @@ Lets you fill glass bottles with water using cacti.
 
 The top cactus will break and drop a dead bush after 3 uses.
 
-## Useful Fletching Table 🏹 <Badge type="tip" text="^0.3.1" />
+## Fletching Table Tweaks🏹 <Badge type="tip" text="^0.3.1" />
 
 Tighten the string of your bow in the fletching table for improved accuracy.
 
