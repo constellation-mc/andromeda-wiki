@@ -15,7 +15,7 @@ description: Andromeda wiki
 
 </div>
 
-<p style="font-size: 120%">A galaxy is a collection of things and systems. So is this mod.</p>
+<p style="font-size: 120%">Highly configurable, modular tweaks/additions mod!</p>
 
 <br/>
 
