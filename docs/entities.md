@@ -8,7 +8,8 @@ description: Entity related tweaks
 
 ## Ghast Tweaks 👻 <Badge type="tip" text="^1.11.0" />
 
-Currently, makes ghast explode upon death.
+Currently, makes ghast explode upon death, and optionally, 
+makes fireball explosions convert obsidian into crying obsidian.
 
 ::: details configuration
 
@@ -16,6 +17,7 @@ Currently, makes ghast explode upon death.
 |---------|-------------
 | `explodeOnDeath` | Should ghast explode upon death? |
 | `explosionPower` | Ghast explosion power. |
+| `fireBallsConvertObsidian` | Chast fireball explosions convert obidian into crying obsidian. |
 
 :::
 
@@ -47,7 +49,7 @@ Not all modded minecart types are supported!
 
 ## Zombies Don't Pick up Garbage 🧟‍♀️❌🚮 <Badge type="tip" text="^1.0.0" />
 
-Prevent zombies from picking up things like rotten flesh. If [Throwable Items](/mechanics#throwable-items-🥏) are on, zombies will also pick up those.
+Prevent zombies from picking up things like rotten flesh.
 
 You can add your own items with the `andromeda:zombies_pick_up` tag!
 
