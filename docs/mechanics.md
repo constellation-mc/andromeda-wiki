@@ -6,7 +6,7 @@ description: Things and stuff idk
 
 # Mechanics
 
-## Linkart <Badge type="tip" text="^2.0.0" />
+## Linkart
 
 Allows linking minecarts together via chains. if this sounds familiar, this is [Linkart](https://www.curseforge.com/minecraft/mc-mods/linkart-updated) merged into Andromeda.
 
@@ -26,7 +26,7 @@ This option adds an `andromeda:linkers` tag, to allow using chains from other mo
 
 :::
 
-## Villager Gifting 🎁 <Badge type="tip" text="^0.9.0" />
+## Villager Gifting 🎁 
 
 Restore some reputation by giving gifts to villagers!
 
@@ -38,7 +38,7 @@ This option adds 4 new tags:
 
 The defaults can be found here: [andromeda/tags/items/villager_gifts/](https://github.com/constellation-mc/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts)
 
-## Dragon Fight Tweaks 🐉 <Badge type="tip" text="^0.6.0" />
+## Dragon Fight Tweaks 🐉 
 
 ### 1. Respawn Crystals
 
@@ -58,7 +58,7 @@ Reduce the range in which the dragon can heal itself with crystals from 32 block
 
 All newly generated spikes will be shorter.
 
-## Wandering Trader Horn 🐐 <Badge type="tip" text="^0.4" />
+## Wandering Trader Horn 🐐 
 
 Every 2 days, you can blow the "sing" horn to summon a wandering trader.
 

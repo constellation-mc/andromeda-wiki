@@ -6,6 +6,87 @@ description: 方块相关调整
 
 # 方块
 
+## 孵蛋器 🐣
+[![需要命令官模组](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+
+<img alt="一张孵蛋器的游戏内图片，它是一个顶上有玻璃，装有蛋的木盒子。" style="display: block; margin-left: auto; margin-right: auto;" src="/images/incubator.webp" width="520">
+
+一个方便且实用的孵蛋装置！
+
+上手指南：
+
+<div style="float: right;">
+<img src="/images/incubator_guide.webp" width="348">
+<ul><li>（一个或者两个都行）</li></ul>
+</div>
+
+1. 在你想要的地方放下孵蛋器。
+2. 因为这个器械无法自动生热，所以你需要在它的底下放置一个营火。
+3. 用漏斗传导物品，或者手持蛋右键它。
+4. 静心等待…
+
+兼容所有原版的蛋，包括刷怪蛋 (只要有使用或延展 SpawnEggItem class，该模组的刷怪蛋就被支持)。
+
+这里是一些额外的设置项：
+
+* 随机化孵化时间，大幅随机化孵蛋器的孵化时间。
+
+::: details 自定义行为
+
+从 1.9.0 起，孵蛋器支持生成随机实体，设置 NBT，以及在孵化完成时执行命令。1.10.0 后，`/` 样式的命令被[命令官模组的命令](https://constellation-mc.github.io/commander/zh-cn/Commands)取代了，并且 `time` 支持使用[表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions)。
+
+下面是最简单的例子：
+```json
+{
+  "identifier": "minecraft:egg",
+  "entries": {
+    "entity": "minecraft:chicken"
+  },
+  "time": 2500
+}
+```
+孵蛋器孵化完成后，将会生成一只小鸡。
+
+我们也可以来得复杂些：
+```json
+{
+  "identifier": "minecraft:turtle_egg",
+  "entries": [
+    {
+      "weight": 1,
+      "data": {
+        "entity": "minecraft:turtle",
+        "nbt": {
+          "CustomName": "{\"text\":\"Poseidon\"}"
+        },
+        "commands": [
+          {
+            "type": "commander:commands",
+            "selector": "this_entity",
+            "commands": [
+              "/say hi!"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "time": 4000
+}
+```
+
+如你所见，`entries` 不但可以接受单个实体，还能接受带权重的列表。`data` 和单个 `entries` 同理。
+
+指令是由生物执行的。与普通的 `/say hi!` 不同，所有玩家都会收到来自海龟 `Poseidon` 的问候消息。
+
+| 命令官上下文  |   |
+|---|---|
+| `time`  | `block_state`, `block_entity`, `tool`, `origin`  |
+| `commands`  | `this_entity`, `block_state`, `block_entity`, `tool`, `origin`  |
+
+:::
+
+
 ## 胎生苗掉落
 
 成熟后，悬挂的红树胎生苗会掉下来。
@@ -29,9 +110,9 @@ description: 方块相关调整
 
 ::: details configuration
 
-| 配置项  | 描述 |
-|---------|-------------|
-| `divergenceModifier` | 决定箭矢的偏离程度。 $div * modifier$ |
+| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/Expressions) |
+|---------|-------------|-------------|
+| `divergenceModifier` | 决定箭矢的偏离程度。 $div * modifier$ | ✅ |
 
 :::
 
@@ -63,9 +144,9 @@ description: 方块相关调整
 
 :: details configuration
 
-| 配置项  | 描述 |
-|---------|-------------|
-| `range` | 怪物在这个距离内可以守护容器。 |
+| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
+|---------|-------------|-------------|
+| `range` | 怪物在这个距离内可以守护容器。 | ✅ |
 | `allowLockPicking` | 是否[开锁器](/zh-cn./items#开锁器-%F0%9F%94%93)可以无视宝藏守卫？ | ❌ |
 | `breakingHandler` | 被守护的容器是否无法破坏？ | ➖ |
 
@@ -89,10 +170,10 @@ description: 方块相关调整
 
 ::: details configuration
 
-| 配置项  | 描述 |
-|---------|-------------|
-| `affectsPassive` | 是否营火效果影响友善生物？ |
-| `effectsRange` | 营火给予效果的范围。 |
-| `effectList` | 效果列表。 |
+| 配置项  | 描述 | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
+|---------|-------------|-------------|
+| `affectsPassive` | 是否营火效果影响友善生物？ | ✅ |
+| `effectsRange` | 营火给予效果的范围。 | ✅ |
+| `effectList` | 效果列表。 | ✅ |
 
 :::

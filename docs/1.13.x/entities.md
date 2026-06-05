@@ -8,16 +8,14 @@ description: Entity related tweaks
 
 ## Ghast Tweaks 👻 
 
-Currently, makes ghast explode upon death, and optionally, 
-makes fireball explosions convert obsidian into crying obsidian.
+Currently, makes ghast explode upon death.
 
 ::: details configuration
 
-| Config  | Description |
-|---------|-------------
-| `explodeOnDeath` | Should ghast explode upon death? |
-| `explosionPower` | Ghast explosion power. |
-| `fireBallsConvertObsidian` | Chast fireball explosions convert obidian into crying obsidian. |
+| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+|---------|-------------|-------------|
+| `explodeOnDeath` | Should ghast explode upon death? | ✅ |
+| `explosionPower` | Ghast explosion power. | ✅ |
 
 :::
 
@@ -39,17 +37,17 @@ Not all modded minecart types are supported!
 
 ::: details configuration
 
-| Config  | Description |
-|---------|-------------|
-| `modifier` | Speed modifier for most minecarts. |
-| `furnaceModifier` | Speed modifier for furnace minecarts. |
-| `additionalFurnaceFuel` | Fuel consumption modifier for furnace minecarts |
+| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+|---------|-------------|-------------|
+| `modifier` | Speed modifier for most minecarts. | ✅ |
+| `furnaceModifier` | Speed modifier for furnace minecarts. | ✅ |
+| `additionalFurnaceFuel` | Fuel consumption modifier for furnace minecarts | ✅ |
 
 :::
 
 ## Zombies Don't Pick up Garbage 🧟‍♀️❌🚮 
 
-Prevent zombies from picking up things like rotten flesh.
+Prevent zombies from picking up things like rotten flesh. If [Throwable Items](./mechanics#throwable-items-🥏) are on, zombies will also pick up those.
 
 You can add your own items with the `andromeda:zombies_pick_up` tag!
 
@@ -91,9 +89,9 @@ When a bee pollinates a flower, the flower has a chance to spread, much like gra
 
 ::: details configuration
 
-| Config  | Description |
-|---------|-------------|
-| `tallFlowers` | Enable the tweak for tall flowers. Also removes the default flower duplication method. |
+| Config  | Description | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+|---------|-------------|-------------|
+| `tallFlowers` | Enable the tweak for tall flowers. Also removes the default flower duplication method. | ✅ |
 
 :::
 
@@ -103,15 +101,15 @@ Villagers will follow you when you have an emerald block in your hand.
 
 You can specify additional items using the `andromeda:tempting_for_villagers` tag.
 
-## Furnace Minecart Tweaks🛤️ 
+## Better Furnace Minecart 🛤️ 
 
-A few tweaks to make furnace minecarts just a bit more useful
+A few tweaks to make furnace minecarts just a bit better
 
-- The max fuel a furnace cart can store is configurable. (45000 by default, 2147483647 max)
-- Any fuel that works in a regular furnace can be used with the furnace minecart.
+- You can now configure the max fuel allowed for the cart. (45000 by default, 2147483647 max)
+- The same fuel you can use in a normal furnace can now be used in minecarts with a furnace.
 
 Optionally, Furnace minecarts will take fuel from nearby inventory carts, such as minecarts with chests, hoppers and possibly modded ones.
-If a cart has stopped, it has to be pushed before it moves.
+If a cart has stopped, you have to push it with your hand before it moves.
 
 ## New Minecarts 🛤️ 
 

@@ -6,7 +6,7 @@ description: Block related tweaks
 
 # Blocks
 
-## Falling Propagule <Badge type="tip" text="^0.6.0" />
+## Falling Propagule
 
 Fully grown, hanging propagules will fall after some time.
 
@@ -15,13 +15,13 @@ Fully grown, hanging propagules will fall after some time.
   Your browser does not support the video tag.
 </video>
 
-## Cactus Bottle Filling 🌵 <Badge type="tip" text="^0.6.0" />
+## Cactus Bottle Filling 🌵
 
 Lets you fill glass bottles with water using cacti.
 
 The top cactus will break and drop a dead bush after 3 uses.
 
-## Fletching Table Tweaks🏹 <Badge type="tip" text="^0.3.1" />
+## Fletching Table Tweaks🏹
 
 Tighten the string of your bow in the fletching table for improved accuracy.
 
@@ -35,7 +35,7 @@ Tighten the string of your bow in the fletching table for improved accuracy.
 
 :::
 
-## Beds Explode Everywhere 🛏️💥 <Badge type="tip" text="^0.1" />
+## Beds Explode Everywhere 🛏️💥
 
 A joke tweak making beds explode in the overworld.
 
@@ -44,7 +44,7 @@ A joke tweak making beds explode in the overworld.
   Your browser does not support the video tag.
 </video>
 
-## Bed Explosion Power 💥 <Badge type="tip" text="^0.1" />
+## Bed Explosion Power 💥
 
 :)
 
@@ -53,7 +53,7 @@ A joke tweak making beds explode in the overworld.
   Your browser does not support the video tag.
 </video>
 
-## Guarded Loot 🛡 <Badge type="tip" text="^1.0.0" />
+## Guarded Loot 🛡
 
 Have you ever raided a bastion? You may have noticed that it is very easy to dig under the chest and loot from underneath. 
 
@@ -66,22 +66,22 @@ In versions >1.7.0 you can prevent players from breaking guarded chests.
 | Config  | Description |
 |---------|-------------|
 | `range` | The range a mob must be in, to be considered a guard. |
-| `allowLockPicking` | Can a [Lockpick](/items#lockpick-%F0%9F%94%93) bypass guards? |
+| `allowLockPicking` | Can a [Lockpick](./items#lockpick-%F0%9F%94%93) bypass guards? |
 | `breakingHandler` | Should guarded containers be unbreakable? |
 
 :::
 
-## Safe Beds 🛌 <Badge type="tip" text="^0.1" />
+## Safe Beds 🛌
 
 Beds will NOT explode when outside the overworld. Instead, sends the player a friendly message.
 
 <img alt="A scene shows a red bed placed on end stone ground near the portal. Purple plants and Endermen are in the background. A message at the bottom reads 'You can't sleep here!' A shield and items are in the hot bar." style="display: block; margin-left: auto; margin-right: auto;" src="/images/safe_beds.webp" width="520">
 
-## Leaf Slowdown 🌿🐌 <Badge type="danger" text="Deprecated" /> <Badge type="tip" text="^0.1" />
+## Leaf Slowdown 🌿🐌 <Badge type="danger" text="Deprecated" />
 
 Makes it harder to traverse biomes on trees by slowing entities down when they are on leaves.
 
-## Campfire Effects 🔥♥️ <Badge type="tip" text="^0.1" />
+## Campfire Effects 🔥♥️
 
 Gives players configurable effects when they are within a certain range of a campfire.
 

@@ -6,7 +6,7 @@ description: 一些机制，还有一些数不上名的小玩意
 
 # 机制
 
-## 友好送礼 🎁<Badge type="tip" text="^0.9.0" />
+## 友好送礼 🎁
 
 使玩家能够通过给村民送礼来恢复一定的声望值！
 
@@ -18,7 +18,7 @@ description: 一些机制，还有一些数不上名的小玩意
 
 你可以在这里 [andromeda/tags/items/villager_gifts/](https://github.com/constellation-mc/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts) 查看礼品预设。
 
-## 末地龙战调整 🐉<Badge type="tip" text="^0.6.0" />
+## 末地龙战调整 🐉
 
 ### 1. 末影水晶再生成
 
@@ -38,7 +38,7 @@ description: 一些机制，还有一些数不上名的小玩意
 
 让新生成的黑曜石柱更短。
 
-## 流浪商人号角 🐐<Badge type="tip" text="^0.4" />
+## 流浪商人号角 🐐
 
 每两天，你都能使用“歌颂”号角来召唤一位流浪商人。
 

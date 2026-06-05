@@ -38,6 +38,50 @@ description: 其它调整和非调整
 
 这会下载你的所选语言，以及英语（美国）。
 
+## 上传错误报告 📑
+
+如果在栈跟踪中发现了“andromeda”，则上传客户端错误报告。
+
+上传的数据：
+- 环境（如客户端），
+- 系统版本（如 Windows 11），
+- 加载器（如 Fabric）
+- Java（如 Oracle Java 17），
+- Bootstrap 状态（如 发现状态），
+- 部分已加载的模组。
+
+::: tip 提示
+数据将被上传到欧洲的 Mixpanel 服务器。与分析数据不同，这些数据并不会有独特的 ID 作为标识。所有的数据都会以崩溃 UUID 的形式上传(`be4db047-16df-4e41-9121-f1e87618ddea`)。
+:::
+
+## 配置表达式 👩‍💻 
+[![需要命令官模组](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+
+在 1.12.0 新引入的配置系统中，配置文件支持使用命令官模组的表达式。大多情况下，只有 `game`（游戏类）配置支持表达式。
+
+::: warning 注意！
+
+虽然所有表达式的字段都接受浮点数，但仍存在小数点后数字被舍去的情况（比如 `4.0` 被截断成 `4`）！
+
+:::
+
+这一特性使你能够用表达式替换布尔型数据（是/否）和数值。示例如下：
+
+```json
+{
+  "bootstrap": {
+    "enabled": true,
+    "scope": "DIMENSION"
+  },
+  "game": {
+    "modifier": "if(level.isRaining, 0.7, 1)",
+    "furnaceModifier": "if(level.isRaining, 0.7, 1)",
+    "additionalFurnaceFuel": 0.0,
+    "available": true
+  }
+}
+```
+
 
 ## 数据包配置 🧩 
 
@@ -69,7 +113,7 @@ description: 其它调整和非调整
     "available": false
   },
   "minecraft:the_end": {
-    "available": true
+    "available": "level.storage.custom_condition"
   }
 }
 ```
