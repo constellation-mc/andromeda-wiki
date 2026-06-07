@@ -7,6 +7,7 @@ body {
   gap: 0.25rem;
   color: var(--color-inv-base);
   text-decoration: none;
+  display: flex;
 
   & img {
     width: 25px;

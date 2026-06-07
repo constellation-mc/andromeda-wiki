@@ -50,6 +50,14 @@ body {
     @media (width >= 960px) {
       margin-left: var(--sidebar-offset);
     }
+
+    & .wiki-title {
+      display: none;
+
+      @media (width < 960px) {
+        display: flex;
+      }
+    }
   }
 
   & .sidebar {

@@ -7,12 +7,6 @@ main {
   text-align: center;
 }
 
-header {
-  & .title {
-    display: flex;
-  }
-}
-
 .index-button {
   display: block;
   padding: 0.5rem;

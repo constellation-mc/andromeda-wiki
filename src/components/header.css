@@ -17,14 +17,6 @@ header {
   border-bottom: 0.02rem solid
     color-mix(in srgb, var(--color-inv-elevation-2) 20%, transparent);
 
-  & .wiki-title {
-    display: none;
-
-    @media (width < 960px) {
-      display: flex;
-    }
-  }
-
   & .header-version,
   .header-language {
     position: relative;
