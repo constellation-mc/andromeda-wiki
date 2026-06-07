@@ -4,9 +4,11 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import remarkFlexibleContainers from "remark-flexible-containers";
+import rehypeRaw from "rehype-raw";
 import { defineConfig } from "astro/config";
 import { unified } from "@astrojs/markdown-remark";
 import { h } from "hastscript";
+import { visit } from "unist-util-visit";
 import sitemap from "@astrojs/sitemap";
 
 const rehypeTrimTrailingDashes = () => (tree) => {
@@ -24,6 +26,17 @@ const rehypeTrimTrailingDashes = () => (tree) => {
   walk(tree);
 };
 
+function rehypeLazyImages() {
+  return (tree) => {
+    visit(tree, "element", (node) => {
+      if (node.tagName === "img") {
+        node.properties.loading = "lazy";
+        node.properties.decoding = "async";
+      }
+    });
+  };
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://andromeda.zenfyr.dev",
@@ -32,6 +45,8 @@ export default defineConfig({
     processor: unified({
       remarkPlugins: [remarkMath, remarkFlexibleContainers],
       rehypePlugins: [
+        rehypeRaw,
+        rehypeLazyImages,
         rehypeKatex,
         rehypeSlug,
         rehypeTrimTrailingDashes,

@@ -28,7 +28,7 @@ description: 世界相关调整
 蜂巢会随机地从树上掉下来，其中的蜜蜂则会无家可归，并将怒火宣泄到靠近的玩家身上。
 
 <video style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/bee_fall.webm" type="video/mp4">
+  <source src="/assets/videos/bee_fall.webm" type="video/webm">
   你的浏览器不支持视频标签。
 </video>
 
@@ -37,7 +37,7 @@ description: 世界相关调整
 朝蜂巢射箭也能使之掉落！
 
 <video style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/bee_fall_arrow.webm" type="video/mp4">
+  <source src="/assets/videos/bee_fall_arrow.webm" type="video/webm">
   你的浏览器不支持视频标签。
 </video>
 

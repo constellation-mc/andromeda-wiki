@@ -105,6 +105,6 @@ Allows you to "pick up" blocks using minecarts. All contents and some properties
 For the sake of balance, you can configure whether players can "pick up" spawners.
 
 <video style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/minecart-block-picking.webm" type="video/mp4">
+  <source src="/assets/videos/minecart-block-picking.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>

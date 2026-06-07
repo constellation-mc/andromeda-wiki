@@ -30,6 +30,6 @@ description: GUI 和屏幕显示的相关调整
 游戏内，为物品展示框添加物品提示。
 
 <video style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/tooltips_with_secrets.webm" type="video/mp4">
+  <source src="/assets/videos/tooltips_with_secrets.webm" type="video/webm">
   你的浏览器不支持视频标签。
 </video>

@@ -10,7 +10,7 @@ description: Block related tweaks
 Fully grown, hanging propagules will fall after some time.
 
 <video alt="Time-lapse in a mangrove swamp where, after a few seconds, a mangrove propagule falls from its tree." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/falling_propagule.webm" type="video/mp4">
+  <source src="/assets/videos/falling_propagule.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -39,7 +39,7 @@ Tighten the string of your bow in the fletching table for improved accuracy.
 A joke tweak making beds explode in the overworld.
 
 <video alt="A video where a white bed explodes after the player right-clicks on it." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/bed_explosion.webm" type="video/mp4">
+  <source src="/assets/videos/bed_explosion.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -48,7 +48,7 @@ A joke tweak making beds explode in the overworld.
 :)
 
 <video alt="A video in which a white bed explodes with a large explosion and fire after the player right-clicks on it." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/power_of_the_bed.webm" type="video/mp4">
+  <source src="/assets/videos/power_of_the_bed.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
