@@ -56,7 +56,7 @@ description: 其它调整和非调整
 
 ## 配置表达式 👩‍💻
 
-[![需要命令官模组](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+[![需要命令官模组](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
 在 1.12.0 新引入的配置系统中，配置文件支持使用命令官模组的表达式。大多情况下，只有 `game`（游戏类）配置支持表达式。
 

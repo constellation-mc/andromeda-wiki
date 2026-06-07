@@ -56,7 +56,7 @@ Data is sent to Mixpanel EU servers. Unlike analytical data, this data doesn't h
 
 ## Config Expressions 👩‍💻
 
-[![Requires Commander](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+[![Requires Commander](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
 With the new config system introduced in 1.12.0, Andromeda gained support for Commander expressions right in the config. In most cases only `game` configs support expressions.
 

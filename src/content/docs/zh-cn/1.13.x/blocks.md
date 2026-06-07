@@ -7,16 +7,16 @@ description: 方块相关调整
 
 ## 孵蛋器 🐣
 
-[![需要命令官模组](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+[![需要命令官模组](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
-<img alt="一张孵蛋器的游戏内图片，它是一个顶上有玻璃，装有蛋的木盒子。" style="display: block; margin-left: auto; margin-right: auto;" src="/images/incubator.webp" width="520">
+<img alt="一张孵蛋器的游戏内图片，它是一个顶上有玻璃，装有蛋的木盒子。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/incubator.webp" width="520">
 
 一个方便且实用的孵蛋装置！
 
 上手指南：
 
 <figure style="float: right;">
-<img src="/images/incubator_guide.webp" width="348">
+<img src="/assets/images/incubator_guide.webp" width="348">
 <figcaption>（一个或者两个都行）</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ description: 方块相关调整
 成熟后，悬挂的红树胎生苗会掉下来。
 
 <video alt="在红树林沼泽中的延时拍摄，一个红树胎生苗从红树上掉了下来。" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/videos/falling_propagule.webm" type="video/mp4">
+  <source src="/assets/videos/falling_propagule.webm" type="video/mp4">
   你的浏览器不支持视频标签。
 </video>
 
@@ -108,7 +108,7 @@ description: 方块相关调整
 
 赋予制箭台界面显示。在界面中，你可以强化弓弦，提高射击准度。
 
-<img alt="一张制箭台界面的截图，第一个槽位里是弓，第二个是线，第三个则是强化后的弓。下面的工具提示写着，“强化弓弦剩余次数：7”。" style="display: block; margin-left: auto; margin-right: auto;" src="/images/fletching.png" width="412">
+<img alt="一张制箭台界面的截图，第一个槽位里是弓，第二个是线，第三个则是强化后的弓。下面的工具提示写着，“强化弓弦剩余次数：7”。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/fletching.png" width="412">
 
 ::: details configuration
 
@@ -123,7 +123,7 @@ description: 方块相关调整
 一个玩笑式的，让主世界的床也能爆炸的设计。
 
 <video alt="这个视频展示了床在玩家右键后爆炸的情景。" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/videos/bed_explosion.webm" type="video/mp4">
+  <source src="/assets/videos/bed_explosion.webm" type="video/mp4">
   你的浏览器不支持视频标签。
 </video>
 
@@ -132,7 +132,7 @@ description: 方块相关调整
 :）
 
 <video style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/videos/power_of_the_bed.webm" type="video/mp4">
+  <source src="/assets/videos/power_of_the_bed.webm" type="video/mp4">
   你的浏览器不支持视频标签。
 </video>
 
@@ -158,7 +158,7 @@ description: 方块相关调整
 
 用一条友好的消息取代床的爆炸。
 
-<img alt="靠近传送门，一张红色床在末地石上。背景有末影人和紫色的植物。底部显示消息：“你不能在这里睡觉！”在快捷栏中，有盾牌和其他物品。" style="display: block; margin-left: auto; margin-right: auto;" src="/images/safe_beds.webp" width="520">
+<img alt="靠近传送门，一张红色床在末地石上。背景有末影人和紫色的植物。底部显示消息：“你不能在这里睡觉！”在快捷栏中，有盾牌和其他物品。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/safe_beds.webp" width="520">
 
 ## 树叶缓速 🌿🐌<Badge type="danger" text="过时特性" />
 
@@ -168,7 +168,7 @@ description: 方块相关调整
 
 使营火设定范围内的玩家获得指定药水效果。
 
-<img alt="一张在夜晚截取的图片。一个玩家站在点亮的营火旁，周围有草与树木。玩家右手持一块食物，左手持一块盾牌。抬头显示有生命恢复效果。" style="display: block; margin-left: auto; margin-right: auto;" src="/images/campfire_effects.webp" width="520">
+<img alt="一张在夜晚截取的图片。一个玩家站在点亮的营火旁，周围有草与树木。玩家右手持一块食物，左手持一块盾牌。抬头显示有生命恢复效果。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/campfire_effects.webp" width="520">
 
 ::: details configuration
 

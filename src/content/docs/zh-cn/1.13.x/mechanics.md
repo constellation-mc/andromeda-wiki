@@ -40,7 +40,7 @@ description: 一些机制，还有一些数不上名的小玩意
 
 ## 可投掷物品 🥏
 
-[![需要命令官模组](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+[![需要命令官模组](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
 使一些 本来可能用不上\* 的物品变得可投掷。
 

@@ -40,7 +40,7 @@ All newly generated spikes will be shorter.
 
 ## Throwable Items 🥏
 
-[![Requires Commander](https://raw.githubusercontent.com/constellation-mc/commander/documentation/docs/public/badges/requires/compacter_vector.svg)](https://modrinth.com/mod/cmd)
+[![Requires Commander](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
 Throw certain items, which would otherwise be useless\*
 

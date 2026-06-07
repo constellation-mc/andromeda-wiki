@@ -77,12 +77,12 @@ Small slime related tweaks. Each option can be turned on or off.
 When a bee pollinates a flower, the flower has a chance to spread, much like grass.
 
 <video alt="A video of a bee flying from a bee hive to a lily of the valley and after a few seconds, the bee flies away and more flowers pop-up around the original." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/videos/bee_flowers.webm" type="video/mp4">
+  <source src="/assets/videos/bee_flowers.webm" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <br/>
 <video alt="A video of a bee flying from a bee hive to a peony and after a few seconds, the bee flies away and one more flower pops-up near the original." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/videos/bee_double_flowers.webm" type="video/mp4">
+  <source src="/assets/videos/bee_double_flowers.webm" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -119,7 +119,7 @@ If a cart has stopped, you have to push it with your hand before it moves.
 ## New Boats 🛶
 
 <br/>
-<img alt="A screenshot showing five different types of boats on grass. From left to right: a chest boat, a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." style="display: block; margin-left: auto; margin-right: auto;" src="/images/boats.webp" width="520">
+<img alt="A screenshot showing five different types of boats on grass. From left to right: a chest boat, a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/boats.webp" width="520">
 
 - Boat with Furnace: I can't believe this – a furnace minecart on water!
 - Boat with Hopper: Quickly pulls items inside itself.
