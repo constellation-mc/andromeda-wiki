@@ -49,8 +49,9 @@ export function rehypeAutoVideo() {
           type: "element",
           tagName: "video",
           properties: {
-            className: ["lazy-video", "inline-video"],
+            className: ["inline-video", "lazy-video"],
             alt: alt,
+            loading: "lazy",
             loop: true,
             muted: true,
             playsInline: true,
@@ -75,6 +76,7 @@ export function rehypeAutoVideo() {
               properties: {
                 className: ["inline-video"],
                 alt: alt,
+                loading: "lazy",
                 loop: true,
                 muted: true,
                 playsInline: true,
