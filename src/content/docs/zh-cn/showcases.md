@@ -45,5 +45,3 @@ description: 模组介绍视频！
 <br style="clear: both"/>
 
 </div>
-
-想在这里展示你的作品？在评论区，或 [Mastodon](https://merping.synth.download/@zen) 上告诉我！
