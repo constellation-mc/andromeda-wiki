@@ -16,9 +16,9 @@ description: 群星模组维基
 
 <br/>
 
-<img alt="Fabric API icon" src="https://cdn.modrinth.com/data/P7dR8mSH/icon.png" width="40" height="40"> 必要前置：[Fabric API](https://modrinth.com/mod/fabric-api)
+<img alt="Fabric API icon" src="/assets/images/icons/fabric.png" width="40" height="40"> 必要前置：[Fabric API](https://modrinth.com/mod/fabric-api)
 
-<img alt="Mod Menu icon" src="https://cdn.modrinth.com/data/mOgUt4GM/1b6bcdef5a3d92572f517122650716be7ec6458b.webp" width="40" height="40"> 强烈推荐客户端使用 [Mod Menu](https://modrinth.com/mod/modmenu) 和 <img alt="Cloth Config icon" src="https://cdn.modrinth.com/data/9s6osm5g/icon.png" width="40" height="40"> [Cloth Config API](https://modrinth.com/mod/cloth-config)！
+<img alt="Mod Menu icon" src="/assets/images/icons/modmenu.webp" width="40" height="40"> 强烈推荐客户端使用 [Mod Menu](https://modrinth.com/mod/modmenu) 和 <img alt="Cloth Config icon" src="/assets/images/icons/cloth-config.webp" width="40" height="40"> [Cloth Config API](https://modrinth.com/mod/cloth-config)！
 
 <br/>
 

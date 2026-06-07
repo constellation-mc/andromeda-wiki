@@ -16,9 +16,9 @@ description: Andromeda wiki
 
 <br/>
 
-<img alt="Fabric API icon" src="https://cdn.modrinth.com/data/P7dR8mSH/icon.png" width="40" height="40"> [Fabric API](https://modrinth.com/mod/fabric-api) is required!
+<img alt="Fabric API icon" src="/assets/images/icons/fabric.png" width="40" height="40"> [Fabric API](https://modrinth.com/mod/fabric-api) is required!
 
-<img alt="Mod Menu icon" src="https://cdn.modrinth.com/data/mOgUt4GM/1b6bcdef5a3d92572f517122650716be7ec6458b.webp" width="40" height="40"> [Mod Menu](https://modrinth.com/mod/modmenu) and <img alt="Cloth Config icon" src="https://cdn.modrinth.com/data/9s6osm5g/icon.png" width="40" height="40"> [Cloth Config API](https://modrinth.com/mod/cloth-config) are highly recommended on client!
+<img alt="Mod Menu icon" src="/assets/images/icons/modmenu.webp" width="40" height="40"> [Mod Menu](https://modrinth.com/mod/modmenu) and <img alt="Cloth Config icon" src="/assets/images/icons/cloth-config.webp" width="40" height="40"> [Cloth Config API](https://modrinth.com/mod/cloth-config) are highly recommended on client!
 
 <br/>
 
