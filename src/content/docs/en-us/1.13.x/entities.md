@@ -76,15 +76,9 @@ Small slime related tweaks. Each option can be turned on or off.
 
 When a bee pollinates a flower, the flower has a chance to spread, much like grass.
 
-<video alt="A video of a bee flying from a bee hive to a lily of the valley and after a few seconds, the bee flies away and more flowers pop-up around the original." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/bee_flowers.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<auto-video alt="A video of a bee flying from a bee hive to a lily of the valley and after a few seconds, the bee flies away and more flowers pop-up around the original." src="/assets/videos/bee_flowers.webm"></auto-video>
 <br/>
-<video alt="A video of a bee flying from a bee hive to a peony and after a few seconds, the bee flies away and one more flower pops-up near the original." style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" width="520" muted autoplay loop>
-  <source src="/assets/videos/bee_double_flowers.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<auto-video alt="A video of a bee flying from a bee hive to a peony and after a few seconds, the bee flies away and one more flower pops-up near the original." src="/assets/videos/bee_double_flowers.webm"></auto-video>
 
 ::: details configuration
 

@@ -17,5 +17,26 @@ const lang = normalizeLangTag(locale);
 
 <html {lang}>
   <BaseHead {title} {description} {tags} />
-  <body> <slot /> </body>
+  <body> <slot /> </body><script is:inline>
+    document.querySelectorAll(".lazy-video").forEach((video) => {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const source = video.querySelector("source");
+              if (source?.dataset.src) {
+                source.src = source.dataset.src;
+                video.load();
+                video.play();
+              }
+              obs.unobserve(video);
+            }
+          });
+        },
+        { rootMargin: "50px" },
+      );
+
+      observer.observe(video);
+    });
+  </script>
 </html>
