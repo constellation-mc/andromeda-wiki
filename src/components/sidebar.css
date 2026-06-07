@@ -1,0 +1,62 @@
+:root {
+  --sidebar-offset: 0;
+
+  @media (width >= 960px) {
+    --sidebar-offset: 272px;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding-inline: 1.5rem;
+  z-index: 25;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: var(--color-elevation-1);
+
+  & .wiki-title {
+    display: flex;
+    height: 4rem;
+    max-height: 4rem;
+
+    border-bottom: 0.02rem solid
+      color-mix(in srgb, var(--color-inv-elevation-2) 10%, transparent);
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    font-size: medium;
+    line-height: 1;
+
+    & li {
+      & a {
+        display: block;
+        text-decoration: none;
+        padding-block: 0.5rem;
+
+        & p {
+          font-weight: 550;
+          color: var(--color-inv-elevation-2);
+          text-decoration: inherit;
+          margin-block: 0;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+          p {
+            color: var(--color-link);
+          }
+        }
+      }
+    }
+  }
+}

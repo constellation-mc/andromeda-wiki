@@ -1,0 +1,20 @@
+{
+  "en-us": {
+    "base.title": "Andromeda",
+    "base.description": "Highly configurable, modular tweaks/additions mod!",
+    "base.lang": "English",
+    "switch.versions": "Versions",
+    "switch.language": "Language",
+    "sidebar.button": "Menu",
+    "sidebar.features": "Features",
+    "sidebar.meta": "Meta",
+    "content.title": "On this page",
+    "content.top": "Return to top"
+  },
+  "zh-cn": {
+    "base.title": "群星模组",
+    "base.description": "灿若繁星，包罗万象。",
+    "base.lang": "简体中文",
+    "sidebar.features": "特性"
+  }
+}

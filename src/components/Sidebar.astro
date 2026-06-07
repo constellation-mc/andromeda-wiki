@@ -1,0 +1,55 @@
+---
+import SidebarLeaf from "../components/SidebarLeaf.astro";
+
+import { type Version } from "../lib/versions";
+import { t, DEFAULT_VERSION, buildUrl } from "../lib/i18n";
+
+import "./sidebar.css";
+
+type Props = {
+  locale: string;
+  version: Version;
+  translations: Map<string, string>;
+};
+
+const { locale, version: currentVersion, translations } = Astro.props;
+const version = currentVersion ?? DEFAULT_VERSION;
+---
+
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <a href={buildUrl(locale, version.semver)} class="wiki-title">
+      <img decoding="async" loading="eager" src="/favicon-32x32.png" />
+      <h3>{t(locale, "base.title")}</h3>
+    </a>
+    <section>
+      <h4>{t(locale, "sidebar.features")}</h4>
+      <ul>
+        <SidebarLeaf {locale} {version} {translations} />
+        {
+          version.categories.map((cat) => (
+            <SidebarLeaf {locale} {version} {translations} page={cat} />
+          ))
+        }
+      </ul>
+      <hr />
+    </section>
+    <section>
+      <h4>{t(locale, "sidebar.meta")}</h4>
+      <ul>
+        <SidebarLeaf
+          {locale}
+          {translations}
+          version={undefined}
+          page="assets"
+        />
+        <SidebarLeaf
+          {locale}
+          {translations}
+          version={undefined}
+          page="showcases"
+        />
+      </ul>
+    </section>
+  </nav>
+</aside>

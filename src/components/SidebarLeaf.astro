@@ -1,0 +1,27 @@
+---
+import { type Version } from "../lib/versions";
+import { buildUrl, buildKey } from "../lib/i18n";
+
+type Props = {
+  locale: string;
+  translations: Map<string, string>;
+  version?: Version;
+  page?: string;
+};
+
+const { locale, version, translations, page } = Astro.props;
+const { pathname } = Astro.url;
+const url = buildUrl(locale, version ? version.semver : undefined, page);
+---
+
+<li>
+  <a class={pathname == url ? "active" : ""} href={url}
+    ><p>
+      {
+        translations.get(
+          buildKey(locale, version ? version.semver : undefined, page),
+        )
+      }
+    </p></a
+  >
+</li>

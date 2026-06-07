@@ -1,0 +1,12 @@
+---
+interface Props {
+  icon: string;
+}
+
+const { icon } = Astro.props;
+---
+
+<icon-container>
+  <tabler {...{ [icon]: "" }}></tabler>
+  <slot />
+</icon-container>

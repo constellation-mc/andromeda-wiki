@@ -1,0 +1,15 @@
+body {
+  color: var(--color-inv-base);
+}
+
+.wiki-title {
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-inv-base);
+  text-decoration: none;
+
+  & img {
+    width: 25px;
+    height: 25px;
+  }
+}

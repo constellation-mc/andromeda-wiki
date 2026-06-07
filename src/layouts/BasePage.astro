@@ -1,0 +1,21 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { normalizeLangTag } from "../lib/i18n";
+
+import "./base.css";
+
+type Props = {
+  title: string;
+  locale: string;
+  tags?: string[];
+  description?: string;
+};
+
+const { title, locale, tags, description } = Astro.props;
+const lang = normalizeLangTag(locale);
+---
+
+<html {lang}>
+  <BaseHead {title} {description} {tags} />
+  <body> <slot /> </body>
+</html>

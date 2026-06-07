@@ -1,0 +1,148 @@
+---
+import BasePage from "./BasePage.astro";
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import TablerIcon from "../components/TablerIcon.astro";
+import "./layout.css";
+
+import { type MarkdownHeading } from "astro";
+import { type Version } from "../lib/versions";
+import { t, DEFAULT_VERSION } from "../lib/i18n";
+
+type Props = {
+  title: string;
+  locale: string;
+  version: Version;
+  translations: Map<string, string>;
+  headings: MarkdownHeading[];
+  description?: string;
+};
+
+const {
+  title,
+  locale,
+  version: currentVersion,
+  description,
+  translations,
+  headings,
+} = Astro.props;
+const { pathname } = Astro.url;
+const version = currentVersion ?? DEFAULT_VERSION;
+
+const content = headings.filter((h) => h.depth == 2);
+---
+
+<BasePage
+  title={`${title} | ${t(locale, "base.title")} (${version.semver})`}
+  {locale}
+  {description}
+  tags={["minecraft", "andromeda", "mod"]}
+>
+  <div class="wrapper">
+    <Sidebar {locale} {version} {translations} />
+    <a class="sidebar-close" href="#"></a>
+
+    <main>
+      <Header {locale} {version} />
+
+      <div class="nav-wrapper">
+        <a class="sidebar-button" href="#sidebar">
+          <TablerIcon icon="list-details">
+            <span>{t(locale, "sidebar.button")}</span>
+          </TablerIcon></a
+        >
+
+        {
+          content.length == 0 && (
+            <a class="article-top" href="#">
+              <TablerIcon icon="arrow-back-up">
+                <span>{t(locale, "content.top")}</span>
+              </TablerIcon>
+            </a>
+          )
+        }
+
+        {
+          content.length > 0 && (
+            <details>
+              <summary>
+                <span>{t(locale, "content.title")}</span>
+              </summary>
+
+              {content.length > 0 && (
+                <nav>
+                  <a class="article-top" href="#">
+                    <TablerIcon icon="arrow-back-up">
+                      <span>{t(locale, "content.top")}</span>
+                    </TablerIcon>
+                  </a>
+                  <hr />
+                  <ul class="contents-list">
+                    {content.map((h) => {
+                      return (
+                        <li>
+                          <a href={`#${h.slug}`}>
+                            {h.text.startsWith("#")
+                              ? h.text.substring(1)
+                              : h.text}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </nav>
+              )}
+            </details>
+          )
+        }
+      </div>
+
+      <div class="article-wrapper">
+        <article>
+          <slot />
+        </article>
+
+        <div class="article-bottom">
+          <a
+            href={`https://github.com/constellation-mc/andromeda-wiki/edit/main/src/content/docs/${locale}/${version.semver}${pathname}.md`}
+          >
+            <TablerIcon icon="edit">
+              <span>Edit this page</span>
+            </TablerIcon>
+          </a>
+        </div>
+
+        <hr />
+      </div>
+
+      <aside>
+        <nav>
+          <h3>{t(locale, "content.title")}</h3>
+
+          <a class="article-top" href="#"
+            ><TablerIcon icon="arrow-back-up">
+              <span>{t(locale, "content.top")}</span>
+            </TablerIcon></a
+          >
+          <hr />
+
+          {
+            content.length > 0 && (
+              <ul class="contents-list">
+                {content.map((h) => {
+                  return (
+                    <li>
+                      <a href={`#${h.slug}`}>
+                        {h.text.startsWith("#") ? h.text.substring(1) : h.text}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            )
+          }
+        </nav>
+      </aside>
+    </main>
+  </div>
+</BasePage>

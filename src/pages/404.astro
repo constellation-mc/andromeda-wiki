@@ -1,0 +1,21 @@
+---
+import BasePage from "../layouts/BasePage.astro";
+import Header from "../components/Header.astro";
+import { DEFAULT_VERSION } from "../lib/i18n";
+
+import "./404.css";
+---
+
+<BasePage
+  title="Not Found"
+  locale="en-us"
+  description="The requested page was not found!"
+>
+  <Header locale="en-us" version={DEFAULT_VERSION} />
+
+  <main>
+    <h1>404</h1>
+    <p>Page Not Found</p>
+    <a class="index-button" href="/">Back to index</a>
+  </main>
+</BasePage>

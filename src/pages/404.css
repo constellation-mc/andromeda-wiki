@@ -1,0 +1,24 @@
+body {
+  --article-margin: 4.5rem;
+}
+
+main {
+  padding-block: var(--article-margin);
+  text-align: center;
+}
+
+header {
+  & .title {
+    display: flex;
+  }
+}
+
+.index-button {
+  display: block;
+  padding: 0.5rem;
+  background-color: var(--color-elevation-1);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 0.75rem;
+  text-decoration: none;
+}

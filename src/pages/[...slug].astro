@@ -1,0 +1,75 @@
+---
+import type { GetStaticPaths, GetStaticPathsItem } from "astro";
+import { getCollection, render } from "astro:content";
+import { VERSION_MAP, type Version } from "../lib/versions";
+import {
+  DEFAULT_LOCALE,
+  DEFAULT_VERSION,
+  entryTranslations,
+} from "../lib/i18n";
+import WikiLayout from "../layouts/WikiLayout.astro";
+import type { CollectionEntry } from "astro:content";
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection("docs");
+  const paths: GetStaticPathsItem[] = [];
+
+  const translations = entryTranslations(entries);
+
+  for (const entry of entries) {
+    const [locale, version, ...rest] = entry.id.split("/");
+
+    let page = rest.join("/");
+    if (page === "index" || page.endsWith("/index")) {
+      page = page.replace(/(\/|^)index$/, "");
+    }
+
+    const versionObj = VERSION_MAP.get(version);
+
+    const props = {
+      entry,
+      locale,
+      version: versionObj,
+      translations,
+      page,
+    };
+
+    const push = (slug: string | undefined) =>
+      paths.push({ params: { slug }, props });
+
+    push([locale, version, page].filter(Boolean).join("/") || undefined);
+
+    if (version === DEFAULT_VERSION.semver)
+      push([locale, page].filter(Boolean).join("/") || undefined);
+
+    if (locale === DEFAULT_LOCALE)
+      push([version, page].filter(Boolean).join("/") || undefined);
+
+    if (locale === DEFAULT_LOCALE && version === DEFAULT_VERSION.semver)
+      push(page || undefined);
+  }
+
+  return paths;
+}) satisfies GetStaticPaths;
+
+type Props = {
+  entry: CollectionEntry<"docs">;
+  locale: string;
+  version: Version;
+  translations: Map<string, string>;
+};
+
+const { entry, locale, version, translations } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+
+<WikiLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  {locale}
+  {version}
+  {translations}
+  {headings}
+>
+  <Content />
+</WikiLayout>

@@ -1,0 +1,94 @@
+---
+import { VERSIONS, type Version } from "../lib/versions";
+import TablerIcon from "./TablerIcon.astro";
+import { buildUrl, t, LOCALES } from "../lib/i18n";
+
+import "./header.css";
+
+type Props = {
+  locale: string;
+  version: Version;
+};
+
+const { locale, version } = Astro.props;
+---
+
+<header>
+  <div class="header-left">
+    <a href={buildUrl(locale, version.semver)} class="wiki-title">
+      <img decoding="async" loading="eager" src="/favicon-32x32.png" />
+      <h3>{t(locale, "base.title")}</h3>
+    </a>
+  </div>
+
+  <div class="header-right">
+    <div class="header-switches">
+      <details class="header-version">
+        <summary>
+          <span title={t(locale, "switch.versions")}
+            ><TablerIcon icon="git-fork" /></span
+          >
+        </summary>
+
+        <h3>{t(locale, "switch.versions")}</h3>
+        <ul>
+          {
+            VERSIONS.map((version) => (
+              <li>
+                <a href={buildUrl(locale, version.semver)}>{version.semver}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+
+      <details class="header-language">
+        <summary>
+          <span title={t(locale, "switch.language")}
+            ><TablerIcon icon="language-hiragana" /></span
+          >
+        </summary>
+
+        <h3>{t(locale, "switch.language")}</h3>
+        <ul>
+          {
+            LOCALES.map((locale) => (
+              <li>
+                <a href={buildUrl(locale, version.semver)}>
+                  {t(locale, "base.lang")}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+    </div>
+
+    <div class="header-links">
+      <a
+        title="Source Code"
+        target="_blank"
+        href="https://github.com/constellation-mc/andromeda"
+        ><TablerIcon icon="brand-github" /></a
+      >
+      <a
+        title="Modrinth"
+        target="_blank"
+        href="https://modrinth.com/mod/andromeda"
+        ><TablerIcon icon="brand-modrinth" /></a
+      >
+    </div>
+  </div>
+</header>
+
+<script>
+  if (window.matchMedia("(hover: hover)").matches) {
+    document
+      .querySelectorAll(".header-version,.header-language")
+      .forEach((d) => {
+        if (!("open" in d)) return;
+        d.addEventListener("mouseenter", () => (d.open = true));
+        d.addEventListener("mouseleave", () => (d.open = false));
+      });
+  }
+</script>
