@@ -5,6 +5,8 @@ body {
     --article-margin: 4.5rem;
   }
 
+  overflow-y: scroll;
+
   @media (width < 960px) {
     &:has(.sidebar:target) {
       overflow: hidden;
