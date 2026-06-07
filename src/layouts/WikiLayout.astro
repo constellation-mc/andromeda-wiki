@@ -15,6 +15,7 @@ type Props = {
   version: Version;
   translations: Map<string, string>;
   headings: MarkdownHeading[];
+  page: string;
   description?: string;
 };
 
@@ -25,8 +26,8 @@ const {
   description,
   translations,
   headings,
+  page,
 } = Astro.props;
-const { pathname } = Astro.url;
 const version = currentVersion ?? DEFAULT_VERSION;
 
 const content = headings.filter((h) => h.depth == 2);
@@ -104,7 +105,7 @@ const content = headings.filter((h) => h.depth == 2);
 
         <div class="article-bottom">
           <a
-            href={`https://github.com/constellation-mc/andromeda-wiki/edit/main/src/content/docs/${locale}/${version.semver}${pathname}.md`}
+            href={`https://github.com/constellation-mc/andromeda-wiki/edit/main/src/content/docs/${page}.md`}
           >
             <TablerIcon icon="edit">
               <span>Edit this page</span>

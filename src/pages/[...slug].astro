@@ -31,7 +31,7 @@ export const getStaticPaths = (async () => {
       locale,
       version: versionObj,
       translations,
-      page,
+      page: entry.id,
     };
 
     const push = (slug: string | undefined) =>
@@ -57,9 +57,10 @@ type Props = {
   locale: string;
   version: Version;
   translations: Map<string, string>;
+  page: string;
 };
 
-const { entry, locale, version, translations } = Astro.props;
+const { entry, locale, version, translations, page } = Astro.props;
 const { Content, headings } = await render(entry);
 ---
 
@@ -70,6 +71,7 @@ const { Content, headings } = await render(entry);
   {version}
   {translations}
   {headings}
+  {page}
 >
   <Content />
 </WikiLayout>
