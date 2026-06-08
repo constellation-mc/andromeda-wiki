@@ -29,7 +29,11 @@ const {
   page,
 } = Astro.props;
 const version = currentVersion ?? DEFAULT_VERSION;
-const canonical = `${Astro.url.origin}/${page}/`;
+
+const cleanPath = page.replace(/^\/+|\/+$/g, "").replace(/\/?index\/?$/, "");
+const canonical = cleanPath
+  ? `${Astro.url.origin}/${cleanPath}/`
+  : `${Astro.url.origin}/`;
 
 const content = headings.filter((h) => h.depth == 2);
 ---
