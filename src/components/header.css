@@ -67,6 +67,9 @@ header {
       left: auto;
       right: 0;
 
+      scrollbar-gutter: stable;
+      scrollbar-width: thin;
+
       border-radius: 0.75rem;
       padding: 0.75rem;
 
@@ -78,6 +81,9 @@ header {
       max-width: 90vw;
 
       white-space: normal;
+
+      overflow-y: auto;
+      max-height: min(300px, 70dvh);
     }
   }
 
