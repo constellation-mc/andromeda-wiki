@@ -25,6 +25,9 @@ body {
   font-size: small;
   line-height: 1;
 
+  border-inline-start: 0.15rem solid
+    color-mix(in srgb, var(--color-link) 50%, transparent);
+
   & li {
     & a {
       display: block;
@@ -32,6 +35,12 @@ body {
       text-decoration: none;
 
       padding-block: 0.5rem;
+      padding-inline: 0.5rem;
+
+      margin-inline-start: -0.15rem;
+
+      border-left: 0.15rem solid
+        color-mix(in srgb, var(--color-link) 0%, transparent);
 
       &:hover,
       &:focus,
