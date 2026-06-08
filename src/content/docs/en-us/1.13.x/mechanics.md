@@ -16,7 +16,7 @@ This option adds 4 new tags:
 - `andromeda:villager_gifts/major_negative` takes 15 reputation
 - `andromeda:villager_gifts/minor_negative` takes 3 reputation
 
-You can see default items here: [andromeda/tags/items/villager_gifts/](https://github.com/melontini/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts)
+You can see default items here: [andromeda/tags/items/villager_gifts/](https://github.com/constellation-mc/andromeda/tree/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/tags/items/villager_gifts)
 
 ## Dragon Fight Tweaks 🐉
 

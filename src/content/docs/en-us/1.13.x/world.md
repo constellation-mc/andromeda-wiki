@@ -39,7 +39,7 @@ Arrows also work!
 
 When this option is on, plants will only grow in their preferred temperatures, e.g. cacti will only grow in deserts, nether and savannas.
 
-This option is data-driven! Checkout [this](https://github.com/melontini/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/andromeda/crop_temperatures/crops/minecraft_wheat.json) for an example and more info.
+This option is data-driven! Checkout [this](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/andromeda/crop_temperatures/crops.json) for an example and more info.
 
 ## Fast Fire Spread 🔥 <Badge type="danger" text="Deprecated" />
 

@@ -16,7 +16,7 @@ description: 一些机制，还有一些数不上名的小玩意
 - `andromeda:villager_gifts/major_negative` 下的物品将扣除 15 点声望
 - `andromeda:villager_gifts/minor_negative` 下的物品将扣除 3 点声望
 
-你可以在这里 [andromeda/tags/items/villager_gifts/](https://github.com/melontini/andromeda/tree/1.19-fabric/src/main/resources/data/andromeda/tags/items/villager_gifts) 查看礼品预设。
+你可以在这里 [andromeda/tags/items/villager_gifts/](https://github.com/constellation-mc/andromeda/tree/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/tags/items/villager_gifts) 查看礼品预设。
 
 ## 末地龙战调整 🐉
 

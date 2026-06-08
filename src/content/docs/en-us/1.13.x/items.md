@@ -9,9 +9,9 @@ description: Item related tweaks
 
 A collection of plant-themed pouches!
 
-- <img class="pixelated" src="/assets/images/icons/seed_pouch.png" width="35" height="35"> Seed Pouch: Contains various seeds (and berries). [Loot table](https://github.com/melontini/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/seeds.json)
-- <img class="pixelated" src="/assets/images/icons/flower_pouch.png" width="35" height="35"> Flower Pouch: Contains common types of flowers. [Loot table](https://github.com/melontini/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/flowers.json)
-- <img class="pixelated" src="/assets/images/icons/sapling_pouch.png" width="35" height="35"> Sapling Pouch: Contains common sapling types. [Loot table](https://github.com/melontini/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/saplings.json)
+- <img class="pixelated" src="/assets/images/icons/seed_pouch.png" width="35" height="35"> Seed Pouch: Contains various seeds (and berries). [Loot table](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/seeds.json)
+- <img class="pixelated" src="/assets/images/icons/flower_pouch.png" width="35" height="35"> Flower Pouch: Contains common types of flowers. [Loot table](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/flowers.json)
+- <img class="pixelated" src="/assets/images/icons/sapling_pouch.png" width="35" height="35"> Sapling Pouch: Contains common sapling types. [Loot table](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/saplings.json)
 - <img class="pixelated" src="/assets/images/icons/special_pouch.png" width="35" height="35"> Special Pouch: This pouch doesn't have it's own table, but can be configured using the `CustomLootId` NBT entry. Set to seeds by default. (provided loot table has no context!)
 
 ## Magnet 🧲

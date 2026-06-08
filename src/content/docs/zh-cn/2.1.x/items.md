@@ -9,9 +9,9 @@ description: 物品相关调整
 
 各种植物主题的小袋！
 
-- <img class="pixelated" src="/assets/images/icons/seed_pouch.png" width="35" height="35"> 种子袋：内含各种种子（还有莓果）。 [战利品表](https://github.com/constellation-mc/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/seeds.json)
-- <img class="pixelated" src="/assets/images/icons/flower_pouch.png" width="35" height="35"> 花朵袋：内含常见品种的花朵。 [战利品表](https://github.com/constellation-mc/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/flowers.json)
-- <img class="pixelated" src="/assets/images/icons/sapling_pouch.png" width="35" height="35"> 树苗袋：内含常见品种的树苗。 [战利品表](https://github.com/constellation-mc/andromeda/blob/1.20-fabric/src/main/resources/data/andromeda/loot_tables/pouches/saplings.json)
+- <img class="pixelated" src="/assets/images/icons/seed_pouch.png" width="35" height="35"> 种子袋：内含各种种子（还有莓果）。 [战利品表](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/seeds.json)
+- <img class="pixelated" src="/assets/images/icons/flower_pouch.png" width="35" height="35"> 花朵袋：内含常见品种的花朵。 [战利品表](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/flowers.json)
+- <img class="pixelated" src="/assets/images/icons/sapling_pouch.png" width="35" height="35"> 树苗袋：内含常见品种的树苗。 [战利品表](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/loot_tables/pouches/saplings.json)
 - <img class="pixelated" src="/assets/images/icons/special_pouch.png" width="35" height="35"> 神秘袋：这个袋子并没有自己的战利品表，但你可以通过配置 `CustomLootId`。默认为种子（但是它的战利品表没有内容！）。
 
 ## 磁铁 🧲
