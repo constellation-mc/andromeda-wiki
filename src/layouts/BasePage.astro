@@ -7,16 +7,17 @@ import "./base.css";
 type Props = {
   title: string;
   locale: string;
+  canonical?: string;
   tags?: string[];
   description?: string;
 };
 
-const { title, locale, tags, description } = Astro.props;
+const { title, locale, tags, description, canonical } = Astro.props;
 const lang = normalizeLangTag(locale);
 ---
 
 <html {lang}>
-  <BaseHead {title} {description} {tags} />
+  <BaseHead {title} {description} {tags} {canonical} />
   <body> <slot /> </body><script is:inline>
     document.querySelectorAll(".lazy-video").forEach((video) => {
       const observer = new IntersectionObserver(

@@ -10,6 +10,7 @@ import { unified } from "@astrojs/markdown-remark";
 import { h } from "hastscript";
 import { visit } from "unist-util-visit";
 import sitemap from "@astrojs/sitemap";
+import { LOCALES, DEFAULT_LOCALE, normalizeLangTag } from "./src/lib/i18n";
 
 const rehypeTrimTrailingDashes = () => (tree) => {
   const walk = (node) => {
@@ -100,6 +101,9 @@ export function rehypeAutoVideo() {
   };
 }
 
+const locales = {};
+LOCALES.forEach((locale) => (locales[locale] = normalizeLangTag(locale)));
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://andromeda.zenfyr.dev",
@@ -122,5 +126,12 @@ export default defineConfig({
     }),
   },
 
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: DEFAULT_LOCALE,
+        locales: locales,
+      },
+    }),
+  ],
 });

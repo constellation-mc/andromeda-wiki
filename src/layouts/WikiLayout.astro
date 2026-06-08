@@ -29,6 +29,7 @@ const {
   page,
 } = Astro.props;
 const version = currentVersion ?? DEFAULT_VERSION;
+const canonical = `${Astro.url.origin}/${page}/`;
 
 const content = headings.filter((h) => h.depth == 2);
 ---
@@ -37,6 +38,7 @@ const content = headings.filter((h) => h.depth == 2);
   title={`${title} | ${t(locale, "base.title")} (${version.semver})`}
   {locale}
   {description}
+  {canonical}
   tags={["minecraft", "andromeda", "mod"]}
 >
   <div class="wrapper">
