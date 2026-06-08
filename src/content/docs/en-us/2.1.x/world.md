@@ -39,7 +39,40 @@ Arrows also work!
 
 When this option is on, plants will only grow in their preferred temperatures, e.g. cacti will only grow in deserts, nether and savannas.
 
-This option is data-driven! Checkout [this](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/andromeda/crop_temperatures/crops.json) for an example and more info.
+::: details Data Pack options
+
+This feature supports adding/replacing temperatures using a data pack.
+
+Create a file like `beetroots.json` in `/data/[modid]/andromeda/crop_temperatures/`.
+
+```json5
+{
+  replace: false, // if true, the entires in this config will override values from other packs.
+  entries: {
+    // block identifier, often different from the item id!
+    "minecraft:beetroots": [
+      0.2, // absolute minimum; won't grow below this; inclusive
+      0.3, // minimum, will grow; but slowly; exclusive
+      1.0, // maximum, will grow; but slowly; exclusive
+      1.0, // absolute maximum; won't grow above this; inclusive
+    ],
+  },
+}
+```
+
+There's also the legacy, deprecated and not recommended format
+
+```json5
+{
+  identifier: "minecraft:cactus", // block identifier, often different from the item id!
+  min: 1.5, // will grow, but slowly; exclusive
+  max: 2.0, // will grow, but slowly; exclusive
+  aMin: 1.2, // won't grow below this; inclusive
+  aMax: 2.0, // won't grow above this; inclusive
+}
+```
+
+:::
 
 ## Fast Fire Spread 🔥 <Badge type="danger" text="Deprecated" />
 
