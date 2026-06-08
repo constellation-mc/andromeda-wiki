@@ -20,6 +20,7 @@ body {
   margin-inline: auto;
   max-width: 100%;
   width: 520px;
+  min-height: 300px;
 }
 
 .lazy-video {
