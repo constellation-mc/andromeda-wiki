@@ -173,8 +173,11 @@ body {
 
           background-color: var(--color-elevation-1);
           filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.25));
+
           min-width: 250px;
           max-width: 90vw;
+          overflow-y: auto;
+          max-height: min(300px, 60dvh);
 
           white-space: normal;
 
@@ -273,7 +276,7 @@ body {
       margin-block-start: var(--article-margin);
       right: 0;
       position: sticky;
-      height: calc(100vh - var(--article-margin));
+      height: calc(100dvh - var(--article-margin));
 
       overflow-x: hidden;
       overflow-y: auto;

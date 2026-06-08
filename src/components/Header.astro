@@ -23,7 +23,7 @@ const { locale, version } = Astro.props;
 
   <div class="header-right">
     <div class="header-switches">
-      <details class="header-version">
+      <details class="static header-version">
         <summary>
           <span title={t(locale, "switch.versions")}
             ><TablerIcon icon="git-fork" /></span
@@ -42,7 +42,7 @@ const { locale, version } = Astro.props;
         </ul>
       </details>
 
-      <details class="header-language">
+      <details class="static header-language">
         <summary>
           <span title={t(locale, "switch.language")}
             ><TablerIcon icon="language-hiragana" /></span
