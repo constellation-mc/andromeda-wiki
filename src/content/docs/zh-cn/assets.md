@@ -13,7 +13,6 @@ description: 各种图标设计的文件。
 方形图标：
 
 <img style="float: left;" src="/assets/logos/logo.png" width="100">
-<img style="float: left;" src="/assets/logos/logo_page.png" width="100">
 <img style="float: left;" src="/assets/logos/background.png" width="100">
 
 <br style="clear: both" />

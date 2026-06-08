@@ -13,7 +13,6 @@ The font used in Andromeda banners is [Kanit](https://fonts.google.com/specimen/
 Square logos:
 
 <img style="float: left;" src="/assets/logos/logo.png" width="100">
-<img style="float: left;" src="/assets/logos/logo_page.png" width="100">
 <img style="float: left;" src="/assets/logos/background.png" width="100">
 
 <br style="clear: both" />
