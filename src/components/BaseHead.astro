@@ -5,12 +5,10 @@ import "katex/dist/katex.min.css";
 
 interface Props {
   title: string;
-  canonical?: string;
   description?: string;
-  tags?: string[];
 }
 
-const { title, description, canonical, tags = [] } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <head>
@@ -21,21 +19,19 @@ const { title, description, canonical, tags = [] } = Astro.props;
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <meta name="generator" content={Astro.generator} />
 
-  {canonical && <link rel="canonical" href={canonical} />}
-
   <title>{title}</title>
   <meta name="title" content={title} />
   {description && <meta name="description" content={description} />}
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content={Astro.url} />
   <meta property="og:title" content={title} />
   {description && <meta property="og:description" content={description} />}
 
-  {tags.map((t) => <meta property="article:tag" content={t} />)}
-
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={Astro.url} />
   <meta property="twitter:title" content={title} />
   {description && <meta property="twitter:description" content={description} />}
+
   <slot />
 </head>

@@ -37,15 +37,19 @@ const canonical = cleanPath
   : `${Astro.url.origin}/`;
 
 const content = headings.filter((h) => h.depth == 2);
+const tags = ["minecraft", "andromeda", "mod"];
 ---
 
 <BasePage
   title={`${title} | ${t(locale, "base.title")} (${version.semver})`}
   {locale}
   {description}
-  {canonical}
-  tags={["minecraft", "andromeda", "mod"]}
 >
+  <Fragment slot="head">
+    {tags.map((t) => <meta property="article:tag" content={t} />)}
+    <link rel="canonical" href={canonical} />
+  </Fragment>
+
   <div class="wrapper">
     <Sidebar {locale} {version} {translations} />
     <a class="sidebar-close" href="#"></a>
