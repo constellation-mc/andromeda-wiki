@@ -42,8 +42,7 @@ export function rehypeAutoVideo() {
   return (tree) => {
     visit(tree, "element", (node, index, parent) => {
       if (node.tagName === "auto-video" && parent && index !== undefined) {
-        const src = node.properties.src;
-        const alt = node.properties.alt;
+        const { src, alt, width, height } = node.properties;
         if (!src) return;
 
         const lazyVideo = {
@@ -52,6 +51,8 @@ export function rehypeAutoVideo() {
           properties: {
             className: ["inline-video", "lazy-video"],
             alt: alt,
+            width: width,
+            height: height,
             loading: "lazy",
             loop: true,
             muted: true,
@@ -77,6 +78,8 @@ export function rehypeAutoVideo() {
               properties: {
                 className: ["inline-video"],
                 alt: alt,
+                width: width,
+                height: height,
                 loading: "lazy",
                 loop: true,
                 muted: true,

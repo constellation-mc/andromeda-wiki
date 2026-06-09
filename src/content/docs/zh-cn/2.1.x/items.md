@@ -104,4 +104,4 @@ N 代表下界合金块，D 代表钻石块。
 
 考虑到平衡性，你可以配置玩家是否能“采集”刷怪笼。
 
-<auto-video alt="" src="/assets/videos/minecart-block-picking.webm"></auto-video>
+<auto-video width="544" height="306" alt="" src="/assets/videos/minecart-block-picking.webm"></auto-video>

@@ -93,7 +93,7 @@ The commands are executed as an entity. So, in the case of `/say hi!` all player
 
 Fully grown, hanging propagules will fall after some time.
 
-<auto-video alt="Time-lapse in a mangrove swamp where, after a few seconds, a mangrove propagule falls from its tree." src="/assets/videos/falling_propagule.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="Time-lapse in a mangrove swamp where, after a few seconds, a mangrove propagule falls from its tree." src="/assets/videos/falling_propagule.webm"></auto-video>
 
 ## Cactus Bottle Filling 🌵
 
@@ -119,13 +119,13 @@ Tighten the string of your bow in the fletching table for improved accuracy.
 
 A joke tweak making beds explode in the overworld.
 
-<auto-video alt="A video where a white bed explodes after the player right-clicks on it." src="/assets/videos/bed_explosion.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="A video where a white bed explodes after the player right-clicks on it." src="/assets/videos/bed_explosion.webm"></auto-video>
 
 ## Bed Explosion Power 💥
 
 :)
 
-<auto-video alt="A video in which a white bed explodes with a large explosion and fire after the player right-clicks on it." src="/assets/videos/power_of_the_bed.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="A video in which a white bed explodes with a large explosion and fire after the player right-clicks on it." src="/assets/videos/power_of_the_bed.webm"></auto-video>
 
 ## Guarded Loot 🛡
 

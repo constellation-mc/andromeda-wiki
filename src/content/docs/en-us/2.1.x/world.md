@@ -27,13 +27,13 @@ Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) b
 
 Randomly, bee nests will fall from their trees, making the bees inside homeless & if a player is nearby, very angry.
 
-<auto-video alt="Timelapse of a bee nest where it falls at the end." src="/assets/videos/bee_fall.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="Timelapse of a bee nest where it falls at the end." src="/assets/videos/bee_fall.webm"></auto-video>
 
 It usually takes 0-2 days for a nest to fall.
 
 Arrows also work!
 
-<auto-video alt="The player shoots a bee nest, it falls." src="/assets/videos/bee_fall_arrow.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="The player shoots a bee nest, it falls." src="/assets/videos/bee_fall_arrow.webm"></auto-video>
 
 ## Temperature Based Crop Growth Speed 🌡️
 

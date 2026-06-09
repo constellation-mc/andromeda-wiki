@@ -20,8 +20,13 @@ body {
   margin-inline: auto;
   max-width: 100%;
   width: 520px;
+  height: auto;
 }
 
 .lazy-video {
   display: none;
+}
+
+.eager-video {
+    display: block;
 }

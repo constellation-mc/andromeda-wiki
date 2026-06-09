@@ -76,9 +76,9 @@ description: 实体相关调整
 
 蜜蜂为花朵授粉时，可能像用骨粉催生草那样催生花丛。
 
-<auto-video alt="视频中，一只蜜蜂从蜂巢中飞出，向铃兰飞去，几秒后，蜜蜂飞离，原本的花朵周围冒出了更多花朵。" src="/assets/videos/bee_flowers.webm"></auto-video>
+<auto-video width="544" height="306" alt="视频中，一只蜜蜂从蜂巢中飞出，向铃兰飞去，几秒后，蜜蜂飞离，原本的花朵周围冒出了更多花朵。" src="/assets/videos/bee_flowers.webm"></auto-video>
 <br/>
-<auto-video alt="视频中，一直蜜蜂从蜂巢中飞出，向牡丹飞去，几秒后，蜜蜂飞离，原本的花丛周围冒出了更多花朵。" src="/assets/videos/bee_double_flowers.webm"></auto-video>
+<auto-video width="544" height="306" alt="视频中，一直蜜蜂从蜂巢中飞出，向牡丹飞去，几秒后，蜜蜂飞离，原本的花丛周围冒出了更多花朵。" src="/assets/videos/bee_double_flowers.webm"></auto-video>
 
 ::: details configuration
 

@@ -29,4 +29,4 @@ Remove "Adventure Mode" from the gamemode switcher
 
 Display an in-world tooltip when you look at item frames.
 
-<auto-video alt="The player points the cursor to some item frames and a tooltip appears besides it." src="/assets/videos/tooltips_with_secrets.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="The player points the cursor to some item frames and a tooltip appears besides it." src="/assets/videos/tooltips_with_secrets.webm"></auto-video>

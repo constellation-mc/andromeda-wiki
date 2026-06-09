@@ -93,7 +93,7 @@ description: 方块相关调整
 
 成熟后，悬挂的红树胎生苗会掉下来。
 
-<auto-video alt="在红树林沼泽中的延时拍摄，一个红树胎生苗从红树上掉了下来。" src="/assets/videos/falling_propagule.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="在红树林沼泽中的延时拍摄，一个红树胎生苗从红树上掉了下来。" src="/assets/videos/falling_propagule.webm"></auto-video>
 
 ## 仙人掌取水 🌵
 
@@ -119,13 +119,13 @@ description: 方块相关调整
 
 一个玩笑式的，让主世界的床也能爆炸的设计。
 
-<auto-video alt="这个视频展示了床在玩家右键后爆炸的情景。" src="/assets/videos/bed_explosion.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="这个视频展示了床在玩家右键后爆炸的情景。" src="/assets/videos/bed_explosion.webm"></auto-video>
 
 ## 床的爆炸强度 💥
 
 :）
 
-<auto-video alt="" src="/assets/videos/power_of_the_bed.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="" src="/assets/videos/power_of_the_bed.webm"></auto-video>
 
 ## 宝藏守卫 🛡
 

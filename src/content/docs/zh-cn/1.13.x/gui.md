@@ -29,4 +29,4 @@ description: GUI 和屏幕显示的相关调整
 
 游戏内，为物品展示框添加物品提示。
 
-<auto-video alt="" src="/assets/videos/tooltips_with_secrets.webm"></auto-video>
+<auto-video width="1920" height="1080" alt="" src="/assets/videos/tooltips_with_secrets.webm"></auto-video>
