@@ -3,6 +3,7 @@ import BasePage from "./BasePage.astro";
 import Header from "../components/Header.astro";
 import Sidebar from "../components/Sidebar.astro";
 import TablerIcon from "../components/TablerIcon.astro";
+import TableOfContents from "../components/TableOfContents.astro";
 import "./layout.css";
 
 import { type MarkdownHeading } from "astro";
@@ -76,29 +77,7 @@ const content = headings.filter((h) => h.depth == 2);
                 <span>{t(locale, "content.title")}</span>
               </summary>
 
-              {content.length > 0 && (
-                <nav>
-                  <a class="article-top" href="#">
-                    <TablerIcon icon="arrow-back-up">
-                      <span>{t(locale, "content.top")}</span>
-                    </TablerIcon>
-                  </a>
-                  <hr />
-                  <ul class="contents-list">
-                    {content.map((h) => {
-                      return (
-                        <li>
-                          <a href={`#${h.slug}`}>
-                            {h.text.startsWith("#")
-                              ? h.text.substring(1)
-                              : h.text}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </nav>
-              )}
+              {content.length > 0 && <TableOfContents {locale} {content} />}
             </details>
           )
         }
@@ -123,32 +102,8 @@ const content = headings.filter((h) => h.depth == 2);
       </div>
 
       <aside>
-        <nav>
-          <h3>{t(locale, "content.title")}</h3>
-
-          <a class="article-top" href="#"
-            ><TablerIcon icon="arrow-back-up">
-              <span>{t(locale, "content.top")}</span>
-            </TablerIcon></a
-          >
-          <hr />
-
-          {
-            content.length > 0 && (
-              <ul class="contents-list">
-                {content.map((h) => {
-                  return (
-                    <li>
-                      <a href={`#${h.slug}`}>
-                        {h.text.startsWith("#") ? h.text.substring(1) : h.text}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            )
-          }
-        </nav>
+        <h3>{t(locale, "content.title")}</h3>
+        <TableOfContents {locale} {content} />
       </aside>
     </main>
   </div>
