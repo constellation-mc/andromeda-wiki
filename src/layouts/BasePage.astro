@@ -19,7 +19,7 @@ const lang = normalizeLangTag(locale);
 <html {lang}>
   <BaseHead {title} {description} {tags} {canonical} />
   <body> <slot /> </body><script is:inline>
-    document.querySelectorAll(".lazy-video").forEach((video) => {
+    document.querySelectorAll("video.lazy-video").forEach((video) => {
       const observer = new IntersectionObserver(
         (entries, obs) => {
           entries.forEach((entry) => {

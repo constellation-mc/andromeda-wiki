@@ -15,6 +15,14 @@ body {
   }
 }
 
+.video-iframe {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .inline-video {
   display: block;
   margin-inline: auto;
@@ -28,5 +36,5 @@ body {
 }
 
 .eager-video {
-    display: block;
+  display: block;
 }
