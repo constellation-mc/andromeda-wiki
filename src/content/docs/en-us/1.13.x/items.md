@@ -17,7 +17,7 @@ A collection of plant-themed pouches!
 ## Magnet 🧲
 
 <br/>
-<img alt="Image of an in-game menu showing a magnet item at level 2 out of 5, with various materials displayed including redstone, lapis lazuli, emerald, diamond, gold ingot, copper, quartz, and coal." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/magnet.png" width="300">
+<img alt="Image of an in-game menu showing a magnet item at level 2 out of 5, with various materials displayed including redstone, lapis lazuli, emerald, diamond, gold ingot, copper, quartz, and coal." class="inline-image" src="/assets/images/magnet.png" width="300" height="195">
 
 - This special magnet allows you to select items you want to attract.
 - Can be upgraded 4 additional times by left-clicking with a Heart of the Sea.
@@ -34,7 +34,7 @@ A collection of plant-themed pouches!
 ## Tooltips 💬
 
 <br/>
-<img alt="A display of three items: a Compass showing a distance to spawn of 2.4, a Clock indicating the current time as 09:06, and a Recovery Compass showing a distance to the last death spot of 7.5." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/tooltips.png" width="500">
+<img alt="A display of three items: a Compass showing a distance to spawn of 2.4, a Clock indicating the current time as 09:06, and a Recovery Compass showing a distance to the last death spot of 7.5." class="inline-image" src="/assets/images/tooltips.png" width="500" height="212">
 
 Adds more useful info to various tooltips. You can enable/disable each one.
 
@@ -63,12 +63,12 @@ As of 0.7.0 you can pick:
 
 Show item durability (in %) if durability is < 100% or item count if count is > 1
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/item-names.png" width="350">
+<img class="inline-image" src="/assets/images/item-names.png" width="350" height="292">
 
 ## Infinite Totem of Undying ♾️♥️
 
 <br/>
-<img alt="A Minecraft beacon is shown on a structure made of diamond and netherite blocks at night. The beacon emits a bright vertical beam of light into the sky, and a glowing item frame is displayed beside it, there's a yellow totem with glowing white eyes in it. The surrounding area includes grass and trees under a dark sky." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/infinite-totem.webp" width="520">
+<img alt="A Minecraft beacon is shown on a structure made of diamond and netherite blocks at night. The beacon emits a bright vertical beam of light into the sky, and a glowing item frame is displayed beside it, there's a yellow totem with glowing white eyes in it. The surrounding area includes grass and trees under a dark sky." class="inline-image" src="/assets/images/infinite-totem.webp" width="520" height="293">
 
 <sub>Works the same way as normal totem, but infinitely...</sub>
 

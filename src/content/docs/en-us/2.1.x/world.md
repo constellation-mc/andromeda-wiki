@@ -9,7 +9,7 @@ description: World related tweaks
 
 Add random barrels with loot to caves!
 
-<img alt="A lantern placed on a barrel block inside a deepslate cave in Minecraft." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/world_loot_barrels.webp" width="520">
+<img alt="A lantern placed on a barrel block inside a deepslate cave in Minecraft." class="inline-image" src="/assets/images/world_loot_barrels.webp" width="520" height="293">
 
 By default, barrels will contain same loot as a village toolsmith. You should be able to change the loot and decorations by overriding the feature using a data pack!
 

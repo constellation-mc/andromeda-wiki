@@ -23,6 +23,13 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.inline-image {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .inline-video {
   display: block;
   margin-inline: auto;

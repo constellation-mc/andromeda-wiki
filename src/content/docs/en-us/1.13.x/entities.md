@@ -113,7 +113,7 @@ If a cart has stopped, you have to push it with your hand before it moves.
 ## New Boats 🛶
 
 <br/>
-<img alt="A screenshot showing five different types of boats on grass. From left to right: a chest boat, a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/boats.webp" width="520">
+<img alt="A screenshot showing five different types of boats on grass. From left to right: a chest boat, a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." class="inline-image" src="/assets/images/boats.webp" width="520" height="293">
 
 - Boat with Furnace: I can't believe this – a furnace minecart on water!
 - Boat with Hopper: Quickly pulls items inside itself.

@@ -9,14 +9,14 @@ description: Block related tweaks
 
 [![Requires Commander](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
-<img alt="A screenshot of an incubator, a wooden box with a glass dome on top and an egg inside the dome." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/incubator.webp" width="520">
+<img alt="A screenshot of an incubator, a wooden box with a glass dome on top and an egg inside the dome." class="inline-image" src="/assets/images/incubator.webp" width="520" height="293">
 
 A handy little device that hatches eggs for you!
 
 A small guide:
 
 <figure style="float: right;">
-<img alt="A screenshot of two incubators, one with a campfire one block below and another with a soul campfire two blocks below." src="/assets/images/incubator_guide.webp" width="348">
+<img alt="A screenshot of two incubators, one with a campfire one block below and another with a soul campfire two blocks below." src="/assets/images/incubator_guide.webp" width="348" height="348">
 <figcaption>(either 1 or 2 will work.)</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ The top cactus will break and drop a dead bush after 3 uses.
 
 Tighten the string of your bow in the fletching table for improved accuracy.
 
-<img alt="A screenshot of the Fletching GUI with a bow in the first slot, a string in the second, and an upgraded bow in the third. Below that, there's another bow with a tooltip that says '*Tightened, usages left: 7'." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/fletching.png" width="412">
+<img alt="A screenshot of the Fletching GUI with a bow in the first slot, a string in the second, and an upgraded bow in the third. Below that, there's another bow with a tooltip that says '*Tightened, usages left: 7'." class="inline-image" src="/assets/images/fletching.png" width="412" height="389">
 
 ::: details configuration
 
@@ -149,7 +149,7 @@ In versions >1.7.0 you can prevent players from breaking guarded chests.
 
 Beds will NOT explode when outside the overworld. Instead, sends the player a friendly message.
 
-<img alt="A scene shows a red bed placed on end stone ground near the portal. Purple plants and Endermen are in the background. A message at the bottom reads 'You can't sleep here!' A shield and items are in the hot bar." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/safe_beds.webp" width="520">
+<img alt="A scene shows a red bed placed on end stone ground near the portal. Purple plants and Endermen are in the background. A message at the bottom reads 'You can't sleep here!' A shield and items are in the hot bar." class="inline-image" src="/assets/images/safe_beds.webp" width="520" height="293">
 
 ## Leaf Slowdown 🌿🐌 <Badge type="danger" text="Deprecated" />
 
@@ -159,7 +159,7 @@ Makes it harder to traverse biomes on trees by slowing entities down when they a
 
 Gives players configurable effects when they are within a certain range of a campfire.
 
-<img alt="A screenshot showing a nighttime scene. A player stands near a campfire with smoke rising, surrounded by grass and trees. The player holds a piece of food in their right hand and a shield in their left. The HUD displays regeneration effect." style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/campfire_effects.webp" width="520">
+<img alt="A screenshot showing a nighttime scene. A player stands near a campfire with smoke rising, surrounded by grass and trees. The player holds a piece of food in their right hand and a shield in their left. The HUD displays regeneration effect." class="inline-image" src="/assets/images/campfire_effects.webp" width="520" height="293">
 
 ::: details configuration
 

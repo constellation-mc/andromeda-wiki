@@ -113,7 +113,7 @@ description: 实体相关调整
 ## 额外的船种类 🛶
 
 <br/>
-<img alt="截图中，草方块上有物种不同的船。从左到右分别是：箱船，载熔炉的船，载唱片机的船，载TNT的船，以及载漏斗的船。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/boats.webp" width="520">
+<img alt="截图中，草方块上有物种不同的船。从左到右分别是：箱船，载熔炉的船，载唱片机的船，载TNT的船，以及载漏斗的船。" class="inline-image" src="/assets/images/boats.webp" width="520" height="293">
 
 - 载熔炉的船：谁敢想，有朝一日会有这样的船行于水上！
 - 载漏斗的船：快速装入物品。

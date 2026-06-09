@@ -9,13 +9,13 @@ description: GUI and display related tweaks
 
 Display an item's tooltip instead of its name when you select that item on your hotbar.
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/tooltip_not_name.png" width="450">
+<img class="inline-image" src="/assets/images/tooltip_not_name.png" width="450" height="149">
 
 ## GUI Particles ✨
 
 This tweak adds particle effects to various GUIs, such as the anvil, enchantment table, furnace, and the creative inventory.
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/gui_particles.webp" width="520">
+<img class="inline-image" src="/assets/images/gui_particles.webp" width="520" height="293">
 
 In the config, you can enable/disable particle effects for each GUI individually, and adjust the velocity of particles in the Creative inventory.
 
@@ -23,7 +23,7 @@ In the config, you can enable/disable particle effects for each GUI individually
 
 Remove "Adventure Mode" from the gamemode switcher
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/gamemode-switcher.png" width="350">
+<img class="inline-image" src="/assets/images/gamemode-switcher.png" width="350" height="210">
 
 ## Item Frame Tooltips 💡
 

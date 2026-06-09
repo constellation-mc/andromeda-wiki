@@ -9,7 +9,7 @@ description: 世界相关调整
 
 向洞穴内添加了装有战利品的木桶！
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/world_loot_barrels.webp" width="520">
+<img class="inline-image" src="/assets/images/world_loot_barrels.webp" width="520" height="293">
 
 木桶的默认战利品与村庄铁匠铺的相同，你可以通过数据包修改战利品表！
 

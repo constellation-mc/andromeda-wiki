@@ -21,7 +21,7 @@ description: 方块相关调整
 
 赋予制箭台界面显示。在界面中，你可以强化弓弦，提高射击准度。
 
-<img alt="一张制箭台界面的截图，第一个槽位里是弓，第二个是线，第三个则是强化后的弓。下面的工具提示写着，“强化弓弦剩余次数：7”。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/fletching.png" width="412">
+<img alt="一张制箭台界面的截图，第一个槽位里是弓，第二个是线，第三个则是强化后的弓。下面的工具提示写着，“强化弓弦剩余次数：7”。" class="inline-image" src="/assets/images/fletching.png" width="412" height="389">
 
 ::: details configuration
 
@@ -65,7 +65,7 @@ description: 方块相关调整
 
 用一条友好的消息取代床的爆炸。
 
-<img alt="靠近传送门，一张红色床在末地石上。背景有末影人和紫色的植物。底部显示消息：“你不能在这里睡觉！”在快捷栏中，有盾牌和其他物品。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/safe_beds.webp" width="520">
+<img alt="靠近传送门，一张红色床在末地石上。背景有末影人和紫色的植物。底部显示消息：“你不能在这里睡觉！”在快捷栏中，有盾牌和其他物品。" class="inline-image" src="/assets/images/safe_beds.webp" width="520" height="293">
 
 ## 树叶缓速 🌿🐌<Badge type="danger" text="过时特性" />
 
@@ -75,7 +75,7 @@ description: 方块相关调整
 
 使营火设定范围内的玩家获得指定药水效果。
 
-<img alt="一张在夜晚截取的图片。一个玩家站在点亮的营火旁，周围有草与树木。玩家右手持一块食物，左手持一块盾牌。抬头显示有生命恢复效果。" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/campfire_effects.webp" width="520">
+<img alt="一张在夜晚截取的图片。一个玩家站在点亮的营火旁，周围有草与树木。玩家右手持一块食物，左手持一块盾牌。抬头显示有生命恢复效果。" class="inline-image" src="/assets/images/campfire_effects.webp" width="520" height="293">
 
 ::: details configuration
 
