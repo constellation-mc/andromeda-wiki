@@ -22,7 +22,7 @@ type Props = {
 };
 
 const {
-  title,
+  title: baseTitle,
   locale,
   version: currentVersion,
   description,
@@ -35,6 +35,8 @@ const version = currentVersion ?? DEFAULT_VERSION;
 const legacy =
   SEMVERS.indexOf(version.semver) > SEMVERS.indexOf(DEFAULT_VERSION.semver);
 
+const title = `${baseTitle} | ${t(locale, "base.title")} (${version.semver})`;
+
 const cleanPath = page.replace(/^\/+|\/+$/g, "").replace(/\/?index\/?$/, "");
 const canonical = cleanPath
   ? `${Astro.url.origin}/${cleanPath}/`
@@ -44,11 +46,7 @@ const content = headings.filter((h) => h.depth == 2);
 const tags = ["minecraft", "andromeda", "mod"];
 ---
 
-<BasePage
-  title={`${title} | ${t(locale, "base.title")} (${version.semver})`}
-  locale={fallback ? DEFAULT_LOCALE : locale}
-  {description}
->
+<BasePage {title} locale={fallback ? DEFAULT_LOCALE : locale} {description}>
   <Fragment slot="head">
     {tags.map((t) => <meta property="article:tag" content={t} />)}
     <link rel="canonical" href={canonical} />
@@ -108,9 +106,17 @@ const tags = ["minecraft", "andromeda", "mod"];
           )
         }
 
-        <article>
-          <h1>{title}</h1>
-          {description && <p>{description}</p>}
+        <article
+          itemprop="item"
+          itemscope
+          itemtype="https://schema.org/Article"
+        >
+          <link itemprop="url" href={canonical} />
+          <meta itemprop="keywords" content={tags.join(", ")} />
+          <meta itemprop="name" content={title} />
+          <meta itemprop="headline" content={title} />
+          <h1>{baseTitle}</h1>
+          {description && <p itemprop="description">{description}</p>}
           <slot />
         </article>
 
