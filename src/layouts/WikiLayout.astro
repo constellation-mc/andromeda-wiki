@@ -7,8 +7,8 @@ import TableOfContents from "../components/TableOfContents.astro";
 import "./layout.css";
 
 import { type MarkdownHeading } from "astro";
-import { type Version } from "../lib/versions";
-import { t, DEFAULT_VERSION } from "../lib/i18n";
+import { type Version, DEFAULT_VERSION } from "../lib/versions";
+import { t } from "../lib/i18n";
 
 type Props = {
   title: string;
@@ -17,6 +17,7 @@ type Props = {
   translations: Map<string, string>;
   headings: MarkdownHeading[];
   page: string;
+  fallback?: boolean;
   description?: string;
 };
 
@@ -28,6 +29,7 @@ const {
   translations,
   headings,
   page,
+  fallback = false,
 } = Astro.props;
 const version = currentVersion ?? DEFAULT_VERSION;
 
@@ -88,16 +90,33 @@ const tags = ["minecraft", "andromeda", "mod"];
       </div>
 
       <div class="article-wrapper">
+        {
+          fallback && (
+            <div class="remark-container warning translation">
+              <p>{t(locale, "content.lang.missing")}</p>
+              <a
+                target="_blank"
+                href={`https://github.com/constellation-mc/andromeda-wiki/`}
+              >
+                <TablerIcon icon="edit">
+                  <span>{t(locale, "content.lang.translate")}</span>
+                </TablerIcon>
+              </a>
+            </div>
+          )
+        }
+
         <article>
           <slot />
         </article>
 
         <div class="article-bottom">
           <a
+            target="_blank"
             href={`https://github.com/constellation-mc/andromeda-wiki/edit/main/src/content/docs/${page}.md`}
           >
             <TablerIcon icon="edit">
-              <span>Edit this page</span>
+              <span>{t(locale, "content.edit")}</span>
             </TablerIcon>
           </a>
         </div>

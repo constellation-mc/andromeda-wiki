@@ -12,16 +12,13 @@ type Props = {
 const { locale, version, translations, page } = Astro.props;
 const { pathname } = Astro.url;
 const url = buildUrl(locale, version ? version.semver : undefined, page);
+const key = buildKey(locale, version ? version.semver : undefined, page);
 ---
 
 <li>
   <a class={pathname == url ? "active" : ""} href={url}
     ><p>
-      {
-        translations.get(
-          buildKey(locale, version ? version.semver : undefined, page),
-        )
-      }
+      {translations.get(key)}
     </p></a
   >
 </li>

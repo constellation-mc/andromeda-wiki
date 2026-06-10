@@ -9,7 +9,10 @@
     "sidebar.features": "Features",
     "sidebar.meta": "Meta",
     "content.title": "On this page",
-    "content.top": "Return to top"
+    "content.top": "Return to top",
+    "content.edit": "Edit this page",
+    "content.lang.missing": "Translation for this version of the page is not yet available!",
+    "content.lang.translate": "Help translate this page"
   },
   "zh-cn": {
     "base.title": "群星模组",

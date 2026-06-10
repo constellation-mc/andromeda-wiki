@@ -1,5 +1,4 @@
-import type { CollectionEntry } from "astro:content";
-import { VERSIONS } from "./versions";
+import { DEFAULT_VERSION } from "./versions";
 import translationsData from "../content/lang.json" with { type: "json" };
 
 type Translations = Record<string, Record<string, string>>;
@@ -7,7 +6,6 @@ const translations = translationsData as Translations;
 
 export const LOCALES = ["en-us", "zh-cn"] as const;
 export const DEFAULT_LOCALE = LOCALES[0];
-export const DEFAULT_VERSION = VERSIONS[0];
 
 export function buildUrl(
   locale?: string,
@@ -28,19 +26,8 @@ export function buildKey(
 ): string {
   const parts: string[] = [locale];
   if (version) parts.push(version);
-  parts.push(page ?? "index");
+  parts.push(page || "index");
   return parts.join("/");
-}
-
-export function entryTranslations(
-  entries: CollectionEntry<"docs">[],
-): Map<string, string> {
-  const translations = new Map<string, string>();
-  for (const entry of entries) {
-    translations.set(entry.id, entry.data.title);
-  }
-
-  return translations;
 }
 
 export function t(locale: string, key: string): string {

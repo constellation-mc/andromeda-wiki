@@ -24,6 +24,9 @@ export const VERSIONS: Version[] = [
     categories: CATEGORIES,
   },
 ];
+export const DEFAULT_VERSION = VERSIONS[0];
 
 export const VERSION_MAP: Map<string, Version> = new Map();
 VERSIONS.forEach((v) => VERSION_MAP.set(v.semver, v));
+
+export const SEMVERS = VERSIONS.map((v) => v.semver);

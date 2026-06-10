@@ -11,6 +11,7 @@ const docs = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    deleted: z.boolean().default(false),
   }),
 });
 

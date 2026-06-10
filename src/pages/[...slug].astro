@@ -1,52 +1,188 @@
 ---
 import type { GetStaticPaths, GetStaticPathsItem } from "astro";
 import { getCollection, render } from "astro:content";
-import { VERSION_MAP, type Version } from "../lib/versions";
 import {
-  DEFAULT_LOCALE,
+  VERSIONS,
+  SEMVERS,
   DEFAULT_VERSION,
-  entryTranslations,
-} from "../lib/i18n";
+  type Version,
+} from "../lib/versions";
+import { parseEntryId, resolveEntry } from "../lib/docs";
+import { DEFAULT_LOCALE, LOCALES, buildKey } from "../lib/i18n";
 import WikiLayout from "../layouts/WikiLayout.astro";
 import type { CollectionEntry } from "astro:content";
 
 export const getStaticPaths = (async () => {
   const entries = await getCollection("docs");
-  const paths: GetStaticPathsItem[] = [];
+  const reversedVersions = VERSIONS.toReversed();
+  const reversedSemvers = SEMVERS.toReversed();
 
-  const translations = entryTranslations(entries);
+  const lookup = new Map<string, CollectionEntry<"docs">>();
+  // locale/page -> set of versions
+  const available = new Map<string, Set<string>>();
+  // page -> set of version for default locale
+  const defaults = new Map<string, Set<string>>();
+  // page -> set of version, for deleted pages
+  const tombstones = new Map<string, Set<string>>();
+  const unversioned = new Map<string, Map<string, CollectionEntry<"docs">>>();
+
+  const availablePages = (vIdx: number) => {
+    return [...defaults.entries()]
+      .filter(([, versions]) => {
+        for (let i = 0; i <= vIdx; i++) {
+          if (versions.has(reversedSemvers[i])) return true;
+        }
+        return false;
+      })
+      .map(([page]) => page);
+  };
 
   for (const entry of entries) {
-    const [locale, version, ...rest] = entry.id.split("/");
+    const { locale, version, page } = parseEntryId(entry.id);
 
-    let page = rest.join("/");
-    if (page === "index" || page.endsWith("/index")) {
-      page = page.replace(/(\/|^)index$/, "");
+    if (version === null) {
+      if (!unversioned.has(page)) unversioned.set(page, new Map());
+      unversioned.get(page)!.set(locale, entry);
+      continue;
     }
 
-    const versionObj = VERSION_MAP.get(version);
+    if (entry.data.deleted && locale === DEFAULT_LOCALE) {
+      if (!tombstones.has(page)) tombstones.set(page, new Set());
+      tombstones.get(page)!.add(version);
+      continue;
+    }
 
-    const props = {
-      entry,
-      locale,
-      version: versionObj,
-      translations,
-      page: entry.id,
-    };
+    lookup.set(`${locale}/${version}/${page}`, entry);
 
-    const push = (slug: string | undefined) =>
-      paths.push({ params: { slug }, props });
+    const lpKey = `${locale}/${page}`;
+    if (!available.has(lpKey)) available.set(lpKey, new Set());
+    available.get(lpKey)!.add(version);
 
-    push([locale, version, page].filter(Boolean).join("/") || undefined);
+    if (locale === DEFAULT_LOCALE) {
+      if (!defaults.has(page)) defaults.set(page, new Set());
+      defaults.get(page)!.add(version);
+    }
+  }
 
-    if (version === DEFAULT_VERSION.semver)
+  const translations = new Map<string, string>();
+  for (const [vIdx, version] of reversedVersions.entries()) {
+    for (const page of availablePages(vIdx)) {
+      const defaultResolved = resolveEntry(
+        DEFAULT_LOCALE,
+        version.semver,
+        page,
+        available,
+        lookup,
+        tombstones,
+      );
+      if (!defaultResolved) continue;
+
+      for (const locale of LOCALES) {
+        const localeResolved = resolveEntry(
+          locale,
+          version.semver,
+          page,
+          available,
+          lookup,
+          tombstones,
+        );
+
+        translations.set(
+          buildKey(locale, version.semver, page),
+          (localeResolved || defaultResolved).entry.data.title,
+        );
+      }
+    }
+  }
+
+  for (const [, locales] of unversioned) {
+    for (const locale of LOCALES) {
+      const entry = locales.get(locale);
+      if (!entry) continue;
+
+      translations.set(entry.id, entry.data.title);
+    }
+  }
+
+  const paths: GetStaticPathsItem[] = [];
+
+  for (const [vIdx, version] of reversedVersions.entries()) {
+    for (const page of availablePages(vIdx)) {
+      const defaultResolved = resolveEntry(
+        DEFAULT_LOCALE,
+        version.semver,
+        page,
+        available,
+        lookup,
+        tombstones,
+      );
+      if (!defaultResolved) continue;
+
+      for (const locale of LOCALES) {
+        const localeResolved = resolveEntry(
+          locale,
+          version.semver,
+          page,
+          available,
+          lookup,
+          tombstones,
+        );
+
+        const fallback =
+          !localeResolved ||
+          SEMVERS.indexOf(localeResolved.resolvedVersion) >
+            SEMVERS.indexOf(defaultResolved.resolvedVersion);
+
+        const props = {
+          entry: (fallback ? defaultResolved : localeResolved).entry,
+          locale,
+          version: version,
+          translations,
+          page: `${locale}/${version.semver}/${page}`,
+          fallback: fallback,
+        };
+
+        const push = (slug: string | undefined) =>
+          paths.push({ params: { slug }, props });
+
+        push(
+          [locale, version.semver, page].filter(Boolean).join("/") || undefined,
+        );
+        if (version.semver === DEFAULT_VERSION.semver)
+          push([locale, page].filter(Boolean).join("/") || undefined);
+        if (locale === DEFAULT_LOCALE)
+          push([version.semver, page].filter(Boolean).join("/") || undefined);
+        if (
+          locale === DEFAULT_LOCALE &&
+          version.semver === DEFAULT_VERSION.semver
+        )
+          push(page || undefined);
+      }
+    }
+  }
+
+  for (const [page, locales] of unversioned) {
+    const defaultEntry = locales.get(DEFAULT_LOCALE);
+    if (!defaultEntry) continue;
+
+    for (const locale of LOCALES) {
+      const entry = locales.get(locale);
+      const fallback = entry == null;
+      const props = {
+        entry: entry ?? defaultEntry,
+        locale,
+        version: undefined,
+        translations,
+        page: (entry ?? defaultEntry).id,
+        fallback,
+      };
+
+      const push = (slug: string | undefined) =>
+        paths.push({ params: { slug }, props });
+
       push([locale, page].filter(Boolean).join("/") || undefined);
-
-    if (locale === DEFAULT_LOCALE)
-      push([version, page].filter(Boolean).join("/") || undefined);
-
-    if (locale === DEFAULT_LOCALE && version === DEFAULT_VERSION.semver)
-      push(page || undefined);
+      if (locale === DEFAULT_LOCALE) push(page || undefined);
+    }
   }
 
   return paths;
@@ -58,9 +194,17 @@ type Props = {
   version: Version;
   translations: Map<string, string>;
   page: string;
+  fallback?: boolean;
 };
 
-const { entry, locale, version, translations, page } = Astro.props;
+const {
+  entry,
+  locale,
+  version,
+  translations,
+  page,
+  fallback = false,
+} = Astro.props;
 const { Content, headings } = await render(entry);
 ---
 
@@ -72,6 +216,7 @@ const { Content, headings } = await render(entry);
   {translations}
   {headings}
   {page}
+  {fallback}
 >
   <Content />
 </WikiLayout>
