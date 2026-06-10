@@ -11,8 +11,10 @@
     "content.title": "On this page",
     "content.top": "Return to top",
     "content.edit": "Edit this page",
-    "content.lang.missing": "Translation for this version of the page is not yet available!",
-    "content.lang.translate": "Help translate this page"
+    "content.lang.missing": "A translation of this page is not yet available!",
+    "content.lang.translate": "Help translate this page",
+    "content.version.legacy": "This page is for an outdated version that is no longer supported!",
+    "content.version.latest": "Go back to latest"
   },
   "zh-cn": {
     "base.title": "群星模组",

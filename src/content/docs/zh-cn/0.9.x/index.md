@@ -4,8 +4,6 @@ title: 主页
 description: 群星模组维基
 ---
 
-# 欢迎来到群星模组维基！
-
 <div class="badge-holder">
 
 [![可在 Modrinth 下载](/assets/images/badges/modrinth.svg)](https://modrinth.com/mod/andromeda)
