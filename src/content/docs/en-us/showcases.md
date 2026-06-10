@@ -1,10 +1,7 @@
 ---
-lang: en-US
 title: Showcases
 description: Showcases of the mod!
 ---
-
-# Showcases
 
 ## Videos
 

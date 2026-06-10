@@ -3,8 +3,6 @@ title: World
 description: World related tweaks
 ---
 
-# World
-
 ## Loot Barrels 💎
 
 Add random barrels with loot to caves!

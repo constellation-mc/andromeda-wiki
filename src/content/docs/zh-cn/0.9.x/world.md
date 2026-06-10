@@ -3,19 +3,7 @@ title: 世界
 description: 世界相关调整
 ---
 
-## 意外之喜 💎
-
-向洞穴内添加了装有战利品的木桶！
-
-<img class="inline-image" src="/assets/images/world_loot_barrels.webp" width="520" height="293">
-
-木桶的默认战利品与村庄铁匠铺的相同，你可以通过数据包修改战利品表！
-
-## 湿润机制调整 💦
-
-让你更够修改耕地的湿润范围，就这样。
-
-## 自种植作物 🌾
+## 自种植作物
 
 植物会尝试在一段时间后种植自身。在 0.7.0 之后，你可以将植物加入到白名单或黑名单中。
 
@@ -37,8 +25,8 @@ description: 世界相关调整
 
 启用此特性时，植物只会在它们适应的温度中生长，比如说，仙人掌只会在沙漠、热带草原，以及下界中生长。
 
-这一选项是基于数据包的！你可以在[这里](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/andromeda/crop_temperatures/crops.json)查看例子，以及更多信息。
+这一选项是基于数据包的！详情请阅 [这里](https://github.com/constellation-mc/andromeda/blob/4bf2d38ccc1c015418a6b8899dd9096cd743f68f/src/main/resources/data/andromeda/andromeda/crop_temperatures/crops.json) 来查看例子，以及更多信息。
 
-## 凶猛火势 🔥<Badge type="danger" text="过时特性" />
+## 更快的火焰蔓延 🔥
 
 使得火势能够蔓延得更快更广。

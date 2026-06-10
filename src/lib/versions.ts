@@ -23,6 +23,10 @@ export const VERSIONS: Version[] = [
     semver: "1.13.x",
     categories: CATEGORIES,
   },
+  {
+    semver: "0.9.x",
+    categories: CATEGORIES,
+  },
 ];
 export const DEFAULT_VERSION = VERSIONS[0];
 

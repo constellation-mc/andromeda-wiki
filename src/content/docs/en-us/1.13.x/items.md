@@ -3,8 +3,6 @@ title: Items
 description: Item related tweaks
 ---
 
-# Items
-
 ## Pouches 🌱🌺🌳
 
 A collection of plant-themed pouches!

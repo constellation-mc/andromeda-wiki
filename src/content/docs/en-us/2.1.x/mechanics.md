@@ -3,8 +3,6 @@ title: Mechanics
 description: Things and stuff idk
 ---
 
-# Mechanics
-
 ## Linkart
 
 Allows linking minecarts together via chains. if this sounds familiar, this is [Linkart](https://www.curseforge.com/minecraft/mc-mods/linkart-updated) merged into Andromeda.

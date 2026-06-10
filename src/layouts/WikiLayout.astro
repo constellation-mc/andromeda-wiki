@@ -7,8 +7,8 @@ import TableOfContents from "../components/TableOfContents.astro";
 import "./layout.css";
 
 import { type MarkdownHeading } from "astro";
-import { type Version, DEFAULT_VERSION } from "../lib/versions";
-import { t } from "../lib/i18n";
+import { type Version, DEFAULT_VERSION, SEMVERS } from "../lib/versions";
+import { DEFAULT_LOCALE, t } from "../lib/i18n";
 
 type Props = {
   title: string;
@@ -32,6 +32,8 @@ const {
   fallback = false,
 } = Astro.props;
 const version = currentVersion ?? DEFAULT_VERSION;
+const legacy =
+  SEMVERS.indexOf(version.semver) > SEMVERS.indexOf(DEFAULT_VERSION.semver);
 
 const cleanPath = page.replace(/^\/+|\/+$/g, "").replace(/\/?index\/?$/, "");
 const canonical = cleanPath
@@ -44,7 +46,7 @@ const tags = ["minecraft", "andromeda", "mod"];
 
 <BasePage
   title={`${title} | ${t(locale, "base.title")} (${version.semver})`}
-  {locale}
+  locale={fallback ? DEFAULT_LOCALE : locale}
   {description}
 >
   <Fragment slot="head">
@@ -107,6 +109,8 @@ const tags = ["minecraft", "andromeda", "mod"];
         }
 
         <article>
+          <h1>{title}</h1>
+          {description && <p>{description}</p>}
           <slot />
         </article>
 

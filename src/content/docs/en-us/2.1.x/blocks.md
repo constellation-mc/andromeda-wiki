@@ -3,8 +3,6 @@ title: Blocks
 description: Block related tweaks
 ---
 
-# Blocks
-
 ## Falling Propagule
 
 Fully grown, hanging propagules will fall after some time.

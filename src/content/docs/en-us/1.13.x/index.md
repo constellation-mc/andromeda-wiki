@@ -3,8 +3,6 @@ title: Home
 description: Andromeda wiki
 ---
 
-# Welcome to the Andromeda wiki!
-
 <div class="badge-holder">
 
 [![Available on Modrinth](/assets/images/badges/modrinth.svg)](https://modrinth.com/mod/andromeda)

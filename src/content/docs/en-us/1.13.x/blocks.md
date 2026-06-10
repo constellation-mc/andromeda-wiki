@@ -3,8 +3,6 @@ title: Blocks
 description: Block related tweaks
 ---
 
-# Blocks
-
 ## Incubator 🐣
 
 [![Requires Commander](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)

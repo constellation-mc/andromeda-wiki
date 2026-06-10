@@ -3,8 +3,6 @@ title: 杂项
 description: 其它调整和非调整
 ---
 
-# 杂项
-
 ## 微存储 📦<Badge type="warning" text="实验性" />
 
 允许玩家在背包的 2x2 合成位存放至多四组物品。

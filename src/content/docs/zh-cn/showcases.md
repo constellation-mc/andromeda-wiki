@@ -1,10 +1,7 @@
 ---
-lang: zh-CN
 title: 模组介绍
 description: 模组介绍视频！
 ---
-
-# 模组介绍
 
 ## 视频
 

@@ -3,8 +3,6 @@ title: GUI
 description: GUI and display related tweaks
 ---
 
-# GUI
-
 ## Tooltip, not Name 💬
 
 Display an item's tooltip instead of its name when you select that item on your hotbar.

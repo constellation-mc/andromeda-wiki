@@ -3,8 +3,6 @@ title: Entities
 description: Entity related tweaks
 ---
 
-# Entities
-
 ## Ghast Tweaks 👻
 
 Currently, makes ghast explode upon death.

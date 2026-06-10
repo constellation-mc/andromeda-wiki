@@ -3,8 +3,6 @@ title: Mechanics
 description: Things and stuff idk
 ---
 
-# Mechanics
-
 ## Villager Gifting 🎁
 
 Restore some reputation by giving gifts to villagers!

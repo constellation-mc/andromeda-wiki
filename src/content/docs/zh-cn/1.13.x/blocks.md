@@ -3,8 +3,6 @@ title: 方块
 description: 方块相关调整
 ---
 
-# 方块
-
 ## 孵蛋器 🐣
 
 [![需要命令官模组](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)

@@ -1,10 +1,7 @@
 ---
-lang: zh-CN
 title: 附件
 description: 各种图标设计的文件。
 ---
-
-# 附件
 
 群星模组的版面使用的字体是 [Kanit](https://fonts.google.com/specimen/Kanit)，网站字体是 [Rubik](https://fonts.google.com/specimen/Rubik) 和 [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)。
 

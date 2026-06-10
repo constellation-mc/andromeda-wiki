@@ -24,7 +24,7 @@ description: 群星模组维基
 
 如果你想建议某个特性，别犹豫，发在这里吧：[讨论页面](https://github.com/constellation-mc/andromeda/discussions/categories/ideas)！
 
-**别忘了看看[模组介绍](/zh-cn/showcases)！**
+**别忘了看看[模组介绍](/zh-cn/showcases/)！**
 
 <p style="font-size: 200%">💜</p>
 

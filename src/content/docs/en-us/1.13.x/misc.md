@@ -3,8 +3,6 @@ title: Misc
 description: Other tweaks and non-tweaks
 ---
 
-# Misc
-
 ## Tiny Storage 📦 <Badge type="warning" text="Experimental" />
 
 Store items in the 2x2 crafting space!

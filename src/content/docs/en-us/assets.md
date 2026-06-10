@@ -1,10 +1,7 @@
 ---
-lang: en-US
 title: Assets
 description: Different mod branding assets.
 ---
-
-# Assets
 
 The font used in Andromeda banners is [Kanit](https://fonts.google.com/specimen/Kanit). The website fonts are [Rubik](https://fonts.google.com/specimen/Rubik) and [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono).
 
