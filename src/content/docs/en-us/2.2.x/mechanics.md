@@ -58,7 +58,7 @@ All newly generated spikes will be shorter.
 
 ## Wandering Trader Horn 🐐
 
-Every 2 days, you can blow the "sing" horn to summon a wandering trader. 
+Every 2 days, you can blow the "sing" horn to summon a wandering trader.
 The exact songs that will trigger the trader are controlled by the `andromeda:trader_songs` tag.
 
 Please note that wandering traders will still spawn naturally

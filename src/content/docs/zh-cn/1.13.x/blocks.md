@@ -133,7 +133,7 @@ description: 方块相关调整
 
 在高于 1.7.0 的版本，你可以防止玩家破坏被守护的容器。
 
-:: details configuration
+::: details configuration
 
 | 配置项             | 描述                                                        | [表达式](https://constellation-mc.github.io/commander/zh-cn/Expressions) |
 | ------------------ | ----------------------------------------------------------- | ------------------------------------------------------------------------ |

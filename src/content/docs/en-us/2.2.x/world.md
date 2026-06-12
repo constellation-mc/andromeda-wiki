@@ -17,7 +17,7 @@ Control farmland hydration range. As simple as that!
 
 ## Self Planting Crops 🌾
 
-If possible, plants will plant themselves after some time. It's possible to white/blacklist plants, 
+If possible, plants will plant themselves after some time. It's possible to white/blacklist plants,
 the list is controlled by the `andromeda:auto_planting` tag, and the list mode is in the config.
 
 Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) by HephaestusDev
