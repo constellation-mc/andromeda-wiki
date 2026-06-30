@@ -32,9 +32,9 @@ Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) b
 
 ::: details configuration
 
-| Config          | Description                                      |
-| --------------- | ------------------------------------------------ |
-| `blacklistMode` | The tag will act as a blacklist.                 |
+| Config          | Description                      |
+| --------------- | -------------------------------- |
+| `blacklistMode` | The tag will act as a blacklist. |
 
 The `andromeda:auto_planting` item tag is used to declare which items shouldn't plant themselves.
 
@@ -70,13 +70,13 @@ Create a file like `beetroots.json` in `/data/[namespace]/andromeda/crop_tempera
 {
   // block identifier, often different from the item id!
   "minecraft:beetroots": {
-    "temperatures": [
+    temperatures: [
       0.2, // absolute minimum; won't grow below this; inclusive
       0.3, // minimum, will grow; but slowly; exclusive
       1.0, // maximum, will grow; but slowly; exclusive
       1.0, // absolute maximum; won't grow above this; inclusive
-    ]
-  }
+    ],
+  },
 }
 ```
 

@@ -67,7 +67,7 @@ In vanilla, only some zombies can pick up items. The higher the difficulty, the 
 ::: details configuration
 
 | Config           | Description                                                 |
-| -----------------| ----------------------------------------------------------- |
+| ---------------- | ----------------------------------------------------------- |
 | `freeze`         | Snowballs will freeze entities                              |
 | `extinguish`     | Snowballs will extinguish entities on fire                  |
 | `melt`           | Snowballs will melt when set on fire                        |
@@ -88,7 +88,7 @@ Small slime related tweaks. Each option can be turned on or off.
 ::: details configuration
 
 | Config     | Description                                      |
-| -----------| ------------------------------------------------ |
+| ---------- | ------------------------------------------------ |
 | `flee`     | Small slimes woll flee from enemies              |
 | `merge`    | Slimes will try to merge                         |
 | `maxMerge` | The max size a slime could grow to after merging |
@@ -130,10 +130,10 @@ If a cart has stopped, it has to be pushed before it moves.
 
 ::: details configuration
 
-| Config            | Description                                              |
-| ----------------- | -------------------------------------------------------- |
-| `maxFuel`         | Controls the max amount of fuel the cart can hold        |
-| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts   |
+| Config            | Description                                            |
+| ----------------- | ------------------------------------------------------ |
+| `maxFuel`         | Controls the max amount of fuel the cart can hold      |
+| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts |
 
 :::
 

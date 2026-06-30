@@ -9,10 +9,10 @@ Currently, makes ghast explode upon death.
 
 ::: details configuration
 
-| Config           | Description                      | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-| ---------------- | -------------------------------- | ----------------------------------------------------------------------- |
-| `explodeOnDeath` | Ghast's will explode upon death  | ✅                                                                      |
-| `explosionPower` | Ghast explosion power.           | ✅                                                                      |
+| Config           | Description                     | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+| ---------------- | ------------------------------- | ----------------------------------------------------------------------- |
+| `explodeOnDeath` | Ghast's will explode upon death | ✅                                                                      |
+| `explosionPower` | Ghast explosion power.          | ✅                                                                      |
 
 :::
 
@@ -65,7 +65,7 @@ In vanilla, only some zombies can pick up items. The higher the difficulty, the 
 ::: details configuration
 
 | Config           | Description                                                 | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-| -----------------| ----------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ---------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------- |
 | `freeze`         | Snowballs will freeze entities                              | ✅                                                                      |
 | `extinguish`     | Snowballs will extinguish entities on fire                  | ✅                                                                      |
 | `melt`           | Snowballs will melt when set on fire                        | ✅                                                                      |
@@ -86,7 +86,7 @@ Small slime related tweaks. Each option can be turned on or off.
 ::: details configuration
 
 | Config     | Description                                      | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-| -----------| ------------------------------------------------ | ----------------------------------------------------------------------- |
+| ---------- | ------------------------------------------------ | ----------------------------------------------------------------------- |
 | `flee`     | Small slimes woll flee from enemies              | ✅                                                                      |
 | `merge`    | Slimes will try to merge                         | ✅                                                                      |
 | `maxMerge` | The max size a slime could grow to after merging | ✅                                                                      |
@@ -128,10 +128,10 @@ If a cart has stopped, you have to push it with your hand before it moves.
 
 ::: details configuration
 
-| Config            | Description                                              | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
-| ----------------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `maxFuel`         | Controls the max amount of fuel the cart can hold        | ❌                                                                      |
-| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts   | ❌                                                                      |
+| Config            | Description                                            | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+| ----------------- | ------------------------------------------------------ | ----------------------------------------------------------------------- |
+| `maxFuel`         | Controls the max amount of fuel the cart can hold      | ❌                                                                      |
+| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts | ❌                                                                      |
 
 :::
 

@@ -43,9 +43,9 @@ A joke tweak making beds explode in the overworld.
 
 ::: details configuration
 
-| Config               | Description                  |
-| -------------------- | ---------------------------- |
-| `power`              | Controls the explosion power |
+| Config  | Description                  |
+| ------- | ---------------------------- |
+| `power` | Controls the explosion power |
 
 :::
 
@@ -99,24 +99,24 @@ A basic example would look something like this, this is the default in Andromeda
 {
   // block identifier, often different from the item id!
   "minecraft:campfire": {
-    "range": 10.0, // Range in blocks.
-    "affectsPassive": true, // If passive entities should be affected, only players otherwise.
-    "condition": {
+    range: 10.0, // Range in blocks.
+    affectsPassive: true, // If passive entities should be affected, only players otherwise.
+    condition: {
       // Optional loot condition, global. supports 'origin', 'block_state', 'block_entity'
-      "condition": "minecraft:block_state_property",
-      "block": "minecraft:campfire",
-      "properties": {
-        "lit": "true"
-      }
+      condition: "minecraft:block_state_property",
+      block: "minecraft:campfire",
+      properties: {
+        lit: "true",
+      },
     },
-    "effects": [
+    effects: [
       {
-        "effect": "minecraft:regeneration", // Effect identifier
-        "amplifier": 0 // Effect amplifier.
+        effect: "minecraft:regeneration", // Effect identifier
+        amplifier: 0, // Effect amplifier.
         // "condition": Optional loot condition, per entity. supports the globals + 'this_entity'
-      }
-    ]
-  }
+      },
+    ],
+  },
 }
 ```
 

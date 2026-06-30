@@ -46,11 +46,11 @@ This will download, if available, your currently selected language and EN-US.
 
 ::: details configuration
 
-| Config    | Description                                  |
-| --------- | -------------------------------------------- |
-| `baseUrl` | The base URL used to download translations.  |
+| Config    | Description                                 |
+| --------- | ------------------------------------------- |
+| `baseUrl` | The base URL used to download translations. |
 
-The `baseUrl` option accept either the literal `default`, which resolves to the version's branch on GitHub, 
+The `baseUrl` option accept either the literal `default`, which resolves to the version's branch on GitHub,
 or a URL, that is then combined with `[lang code].json` to request translation files, so the URL must end with `/`.
 
 :::

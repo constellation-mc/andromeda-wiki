@@ -127,9 +127,9 @@ A joke tweak making beds explode in the overworld.
 
 ::: details configuration
 
-| Config               | Description                  |
-| -------------------- | ---------------------------- |
-| `power`              | Controls the explosion power |
+| Config  | Description                  |
+| ------- | ---------------------------- |
+| `power` | Controls the explosion power |
 
 :::
 
