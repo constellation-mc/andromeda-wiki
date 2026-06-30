@@ -33,7 +33,7 @@ It has some additional settings:
 
 ::: details Adding Custom Recipes
 
-Since 1.9.0, the incubator format has been extended to spawn random entities, set NBT, and execute commands as the spawned entity. Since 1.10.0, `/` commands were replaced by [Commander commands](https://constellation-mc.github.io/commander/Commands) and `time` gained support for [Expressions](https://constellation-mc.github.io/commander/Expressions).
+Commands here use [Commander commands](https://constellation-mc.github.io/commander/Commands) and `time` uses [Commander Expressions](https://constellation-mc.github.io/commander/Expressions).
 
 The most minimal example is:
 
@@ -76,7 +76,7 @@ But more verbose is this:
 }
 ```
 
-As you can see, the `entries` field accepts either a single entity, or a weighted list. The syntax for `data` and singular `entries` is the same.
+The `entries` field accepts either a single entity, or a weighted list. The syntax for `data` and singular `entries` is the same.
 
 The commands are executed as an entity. So, in the case of `/say hi!` all players will receive a message from a turtle named `Poseidon`.
 
@@ -138,8 +138,6 @@ A joke tweak making beds explode in the overworld.
 Have you ever raided a bastion? You may have noticed that it is very easy to dig under the chest and loot from underneath.
 
 Well, this tweak forces you to kill every monster around the chest before you can loot it. Attempting to open the chest will highlight all the monsters you need to kill. Pretty RPG-esque!
-
-In versions >1.7.0 you can prevent players from breaking guarded chests.
 
 ::: details configuration
 

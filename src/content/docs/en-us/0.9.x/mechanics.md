@@ -40,7 +40,7 @@ All newly generated spikes will be shorter.
 
 Allows throwing certain items, which would otherwise be useless\*
 
-::: details Throwable items as of 0.5.0
+::: details Throwable items
 
 - Bone Meal
 - Glowing and Normal Ink Sacs

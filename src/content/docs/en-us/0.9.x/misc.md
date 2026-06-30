@@ -80,7 +80,7 @@ This is probably the easiest way, since you don't even need to import Andromeda.
 
 In your `custom` block you can define Andromeda configs. The recommended way is to define a feature as an object with conditions. You must specify `value` and all the other conditions are optional.
 
-Here you add a version predicate using fabric's notation. As of 0.9.1 only `minecraft` and `andromeda` are supported. If you need something else feel free to reach out, or use the entrypoint.
+Here you add a version predicate using fabric's notation. Only `minecraft` and `andromeda` are supported. If you need something else feel free to reach out, or use the entrypoint.
 
 ```json
     "andromeda:features": {

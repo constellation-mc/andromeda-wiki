@@ -55,8 +55,6 @@ Have you ever raided a bastion? You may have noticed that it is very easy to dig
 
 Well, this tweak forces you to kill every monster around the chest before you can loot it. Attempting to open the chest will highlight all the monsters you need to kill. Pretty RPG-esque!
 
-In versions >1.7.0 you can prevent players from breaking guarded chests.
-
 ::: details configuration
 
 | Config             | Description                                                    |

@@ -44,7 +44,7 @@ Adds more useful info to various tooltips. You can enable/disable each one.
 
 A creative only item that allows you to open things you shouldn't.
 
-As of 0.7.0 you can pick:
+The lockpick can open:
 
 - Villager inventories.
 

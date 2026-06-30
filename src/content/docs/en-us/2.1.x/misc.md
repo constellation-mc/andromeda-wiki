@@ -57,7 +57,7 @@ or a URL, that is then combined with `[lang code].json` to request translation f
 
 ## Data Pack Configs 🧩
 
-Datapack configs work similarly to recipes, but instead of the path being your recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
+Datapack configs work similarly to recipes, but instead of the path being a recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
 
 Only `game` configs can be overriden using data packs!
 
@@ -77,7 +77,7 @@ Here's an example config that changes farmland moisture:
 }
 ```
 
-Andromeda 1.4.2 introduces `andromeda:default`. A special key that is applied to all dimensions before their specific config. Here's a generic example:
+`andromeda:default` is special key that is applied to all dimensions before their specific config. Here's a generic example:
 
 ```json
 {

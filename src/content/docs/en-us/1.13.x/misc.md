@@ -65,7 +65,7 @@ Data is sent to Mixpanel EU servers. Unlike analytical data, this data doesn't h
 
 [![Requires Commander](/assets/images/badges/commander.svg)](https://modrinth.com/mod/cmd)
 
-With the new config system introduced in 1.12.0, Andromeda gained support for Commander expressions right in the config. In most cases only `game` configs support expressions.
+Andromeda supports Commander expressions right in the config. In most cases only `game` configs support expressions.
 
 ::: warning Important!
 
@@ -73,7 +73,7 @@ Even though all expression fields accept values with a floating point, in some c
 
 :::
 
-This allows you to replace a bunch of boolean toggles and number values with expressions. For example:
+This makes it possible to replace a bunch of boolean toggles and number values with expressions. For example:
 
 ```json
 {
@@ -92,7 +92,7 @@ This allows you to replace a bunch of boolean toggles and number values with exp
 
 ## Data Pack Configs 🧩
 
-Datapack configs work similarly to recipes, but instead of the path being your recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
+Datapack configs work similarly to recipes, but instead of the path being a recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
 
 Only `game` configs can be overriden using data packs!
 
@@ -112,7 +112,7 @@ Here's an example config that changes farmland moisture:
 }
 ```
 
-Andromeda 1.4.2 introduces `andromeda:default`. A special key that is applied to all dimensions before their specific config. Here's a generic example:
+`andromeda:default` is special key that is applied to all dimensions before their specific config. Here's a generic example:
 
 ```json
 {

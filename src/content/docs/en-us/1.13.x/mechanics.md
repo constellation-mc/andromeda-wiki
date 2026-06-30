@@ -53,7 +53,7 @@ All newly generated spikes will be shorter.
 
 Throw certain items, which would otherwise be useless\*
 
-::: details Throwable items as of 0.5.0
+::: details Throwable items
 
 - Bone Meal
 - Glowing and Normal Ink Sacs
@@ -74,7 +74,7 @@ With this on, zombies will throw any throwable items they pick up.
 
 All behaviors must be placed in `andromeda/item_throw_behavior` of your datapack, along with `recipes`, `tags`, `loot_tables`, etc. The name of the file doesn't matter.
 
-Since 1.10.0, Andromeda uses [Commander](https://modrinth.com/mod/cmd) for its data pack features. You can learn about commands, Arithmetica and more over at its wiki. https://constellation-mc.github.io/commander/
+Andromeda uses [Commander](https://modrinth.com/mod/cmd) for its data pack features. You can learn about commands, Arithmetica and more over at its wiki. https://constellation-mc.github.io/commander/
 
 Example:
 

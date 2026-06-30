@@ -25,7 +25,7 @@ Control farmland hydration range. As simple as that!
 
 ## Self Planting Crops 🌾
 
-If possible, plants will plant themselves after some time.
+If possible, plants will plant themselves after some time.  It's possible to white/blacklist plants.
 
 Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) by HephaestusDev
 
