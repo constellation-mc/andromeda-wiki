@@ -15,12 +15,30 @@ By default, barrels will contain same loot as a village toolsmith. You should be
 
 Control farmland hydration range. As simple as that!
 
+::: details configuration
+
+| Config           | Description              |
+| ---------------- | ------------------------ |
+| `customMoisture` | Farmland hydration range |
+
+:::
+
 ## Self Planting Crops 🌾
 
 If possible, plants will plant themselves after some time. It's possible to white/blacklist plants,
 the list is controlled by the `andromeda:auto_planting` tag, and the list mode is in the config.
 
 Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) by HephaestusDev
+
+::: details configuration
+
+| Config          | Description                                      |
+| --------------- | ------------------------------------------------ |
+| `blacklistMode` | The tag will act as a blacklist.                 |
+
+The `andromeda:auto_planting` item tag is used to declare which items shouldn't plant themselves.
+
+:::
 
 ## Falling Bee Nests 🐝
 
@@ -38,7 +56,11 @@ Arrows also work!
 
 When this option is on, plants will only grow in their preferred temperatures, e.g. cacti will only grow in deserts, nether and savannas.
 
-::: details Data Pack options
+::: details configuration
+
+| Config           | Description                        |
+| ---------------- | ---------------------------------- |
+| `affectBoneMeal` | Make Bone Meal follow temperatures |
 
 This feature supports adding/replacing temperatures using a data pack.
 
@@ -60,6 +82,10 @@ Create a file like `beetroots.json` in `/data/[namespace]/andromeda/crop_tempera
 
 :::
 
-## Fast Fire Spread 🔥 <Badge type="danger" text="Deprecated" />
+## Fast Fire Spread 🔥
+
+::: warning Deprecated
+This module is deprecated and will be removed in a future version.
+:::
 
 Fire will spread much faster and wider.

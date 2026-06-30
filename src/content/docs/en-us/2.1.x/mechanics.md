@@ -56,6 +56,17 @@ Reduce the range in which the dragon can heal itself with crystals from 32 block
 
 All newly generated spikes will be shorter.
 
+::: details configuration
+
+| Config                     | Description                                           |
+| -------------------------- | ----------------------------------------------------- |
+| `respawnCrystals`          | Respawn end crystals                                  |
+| `scaleHealthByMaxPlayers`  | Scale dragon's health based on max players in the end |
+| `shorterCrystalTrackRange` | Reduce dragon's crystal tracking range                |
+| `shorterSpikes`            | Make the end spkies shorter                           |
+
+:::
+
 ## Wandering Trader Horn 🐐
 
 Every 2 days, you can blow the "sing" horn to summon a wandering trader.
@@ -63,3 +74,13 @@ Every 2 days, you can blow the "sing" horn to summon a wandering trader.
 Please note that wandering traders will still spawn naturally
 
 You can disable the "doTraderSpawning" gamerule if you don't want them to.
+
+::: details configuration
+
+| Config            | Description                                 |
+| ----------------- | ------------------------------------------- |
+| `cooldown`        | Cooldown between new trader spawns          |
+| `instrumentId`    | The horn instrument that summons the trader |
+| `highlightTrader` | Highlight the newly spawned trader          |
+
+:::

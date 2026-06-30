@@ -12,7 +12,7 @@ makes fireball explosions convert obsidian into crying obsidian.
 
 | Config                     | Description                                                     |
 | -------------------------- | --------------------------------------------------------------- |
-| `explodeOnDeath`           | Should ghast explode upon death?                                |
+| `explodeOnDeath`           | Ghast's will explode upon death                                 |
 | `explosionPower`           | Ghast explosion power.                                          |
 | `fireBallsConvertObsidian` | Chast fireball explosions convert obidian into crying obsidian. |
 
@@ -30,8 +30,8 @@ Allows basic control of maximum minecart speeds. There is a separate option for 
 
 You can also configure additional fuel consumption for the furnace minecart. (Negative values are supported)
 
-::: tip Info
-Not all modded minecart types are supported!
+::: warning Deprecated
+This module is deprecated in >1.20.1 and will be removed in a future version. Prefer the vanilla experiment.
 :::
 
 ::: details configuration
@@ -64,6 +64,19 @@ In vanilla, only some zombies can pick up items. The higher the difficulty, the 
 - Melt When on Fire: Snowballs will melt when set on fire.
 - Build Up Layers: Snowballs freeze water and create layers of snow when hit.
 
+::: details configuration
+
+| Config           | Description                                                 |
+| -----------------| ----------------------------------------------------------- |
+| `freeze`         | Snowballs will freeze entities                              |
+| `extinguish`     | Snowballs will extinguish entities on fire                  |
+| `melt`           | Snowballs will melt when set on fire                        |
+| `layers`         | Snowballs will build-up snow layers and freeze water on hit |
+| `enableCooldown` | Throwing a snowball will apply a cooldown                   |
+| `cooldown`       | The cooldown to apply                                       |
+
+:::
+
 ## Slime Tweaks 💧
 
 Small slime related tweaks. Each option can be turned on or off.
@@ -71,6 +84,17 @@ Small slime related tweaks. Each option can be turned on or off.
 - Small slime will flee when they encounter an enemy.
 - Larger slime will merge with smaller ones. In combination with the previous option, this can cause some havoc.
 - Slime will slow down enemies when they attack.
+
+::: details configuration
+
+| Config     | Description                                      |
+| -----------| ------------------------------------------------ |
+| `flee`     | Small slimes woll flee from enemies              |
+| `merge`    | Slimes will try to merge                         |
+| `maxMerge` | The max size a slime could grow to after merging |
+| `slowness` | Apply slowness on collision with slimes          |
+
+:::
 
 ## Bee Flower Duplication 🌺🐝
 
@@ -103,6 +127,15 @@ A few tweaks to make furnace minecarts just a bit more useful
 
 Optionally, Furnace minecarts will take fuel from nearby inventory carts, such as minecarts with chests, hoppers and possibly modded ones.
 If a cart has stopped, it has to be pushed before it moves.
+
+::: details configuration
+
+| Config            | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| `maxFuel`         | Controls the max amount of fuel the cart can hold        |
+| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts   |
+
+:::
 
 ## New Minecarts 🛤️
 

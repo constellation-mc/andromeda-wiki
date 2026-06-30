@@ -9,21 +9,30 @@ Store items in the 2x2 crafting space!
 
 By default, this option will follow the `keepInventory` game rule, but can be configured to always keep the items.
 
+::: details configuration
+
+| Config         | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| `transferMode` | Follow the `keepInventory` gamerule or always keep the items upon death |
+
+:::
+
 ## Auto-generate Recipe Advancements 📗
 
 > Totally goes well with [RBIP](https://modrinth.com/mod/rbip)
 
-By default, all items are required to unlock a recipe, but you can choose to require only one item if you prefer. Additionally, you can blacklist certain IDs and namespaces from being generated. By default, the minecraft, andromeda, and extshape namespaces are blacklisted.
+By default, all items are required to unlock a recipe, but you can choose to require only one item if you prefer. Additionally, you can blacklist certain IDs and namespaces from being generated. By default, the `minecraft`, `andromeda`, and `extshape` namespaces are blacklisted.
 
-The following configuration options are available:
+::: details configuration
 
-- Require All Items: When this option is enabled, players must find all items in a recipe before it is unlocked in the recipe book.
+| Config                               | Description                                                            |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| `requireAllItems`                    | Generated Advancements will require all items in the recipe to unlock. |
+| `ignoreRecipesHiddenInTheRecipeBook` | Skip recipes that don't appear in the recipe book.                     |
+| `namespaceBlacklist`                 | Don't generate Advancements for recipes with those namespaces.         |
+| `recipeBlacklist`                    | Don't generate Advancements for recipes with those identifiers.        |
 
-- Ignore Recipes Hidden in the Recipe Book: Enabling this option will prevent the generation of advancements for recipe types that are hidden in the recipe book.
-
-- Blacklisted Namespaces: This option allows you to specify namespaces (part of an ID before `:`) to be excluded from advancement generation.
-
-- Blacklisted IDs: This option allows you to specify recipe IDs to be excluded from advancement generation.
+:::
 
 ## Minor Inconvenience 💥
 
@@ -34,6 +43,17 @@ Players will explode after taking any damage. Have fun! ❤️
 Download latest translations directly from GitHub.
 
 This will download, if available, your currently selected language and EN-US.
+
+::: details configuration
+
+| Config    | Description                                  |
+| --------- | -------------------------------------------- |
+| `baseUrl` | The base URL used to download translations.  |
+
+The `baseUrl` option accept either the literal `default`, which resolves to the version's branch on GitHub, 
+or a URL, that is then combined with `[lang code].json` to request translation files, so the URL must end with `/`.
+
+:::
 
 ## Data Pack Configs 🧩
 

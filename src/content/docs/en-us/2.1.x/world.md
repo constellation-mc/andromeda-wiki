@@ -15,11 +15,28 @@ By default, barrels will contain same loot as a village toolsmith. You should be
 
 Control farmland hydration range. As simple as that!
 
+::: details configuration
+
+| Config           | Description              |
+| ---------------- | ------------------------ |
+| `customMoisture` | Farmland hydration range |
+
+:::
+
 ## Self Planting Crops 🌾
 
-If possible, plants will plant themselves after some time. Since 0.7.0 you can white/blacklist plants.
+If possible, plants will plant themselves after some time.
 
 Based on [TinyTweaks](https://www.curseforge.com/minecraft/mc-mods/tinytweaks) by HephaestusDev
+
+::: details configuration
+
+| Config          | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| `blacklistMode` | The option below will act as a blacklist.                 |
+| `idList`        | List of item identifiers, controlled by the option above. |
+
+:::
 
 ## Falling Bee Nests 🐝
 
@@ -37,7 +54,11 @@ Arrows also work!
 
 When this option is on, plants will only grow in their preferred temperatures, e.g. cacti will only grow in deserts, nether and savannas.
 
-::: details Data Pack options
+::: details configuration
+
+| Config           | Description                        |
+| ---------------- | ---------------------------------- |
+| `affectBoneMeal` | Make Bone Meal follow temperatures |
 
 This feature supports adding/replacing temperatures using a data pack.
 
@@ -72,6 +93,10 @@ There's also the legacy, deprecated and not recommended format
 
 :::
 
-## Fast Fire Spread 🔥 <Badge type="danger" text="Deprecated" />
+## Fast Fire Spread 🔥
+
+::: warning Deprecated
+This module is deprecated and will be removed in a future version.
+:::
 
 Fire will spread much faster and wider.

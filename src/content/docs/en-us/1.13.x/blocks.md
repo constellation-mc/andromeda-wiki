@@ -125,6 +125,14 @@ A joke tweak making beds explode in the overworld.
 
 <auto-video width="1920" height="1080" alt="A video in which a white bed explodes with a large explosion and fire after the player right-clicks on it." src="/assets/videos/power_of_the_bed.webm"></auto-video>
 
+::: details configuration
+
+| Config               | Description                  |
+| -------------------- | ---------------------------- |
+| `power`              | Controls the explosion power |
+
+:::
+
 ## Guarded Loot 🛡
 
 Have you ever raided a bastion? You may have noticed that it is very easy to dig under the chest and loot from underneath.
@@ -149,7 +157,11 @@ Beds will NOT explode when outside the overworld. Instead, sends the player a fr
 
 <img alt="A scene shows a red bed placed on end stone ground near the portal. Purple plants and Endermen are in the background. A message at the bottom reads 'You can't sleep here!' A shield and items are in the hot bar." class="inline-image" src="/assets/images/safe_beds.webp" width="520" height="293">
 
-## Leaf Slowdown 🌿🐌 <Badge type="danger" text="Deprecated" />
+## Leaf Slowdown
+
+::: warning Deprecated
+This module is deprecated and will be removed in a future version.
+:::
 
 Makes it harder to traverse biomes on trees by slowing entities down when they are on leaves.
 

@@ -3,6 +3,21 @@ title: GUI
 description: GUI and display related tweaks
 ---
 
+## Smooth Tooltips
+
+Tooltips will smoothly glide towards the cursor instead of directly following it.
+
+::: details configuration
+
+| Config   | Description                                                    |
+| ---------| -------------------------------------------------------------- |
+| `clampX` | Max horizontal distance from the cursor                        |
+| `clampY` | Max vertical distance from the cursor                          |
+| `deltaX` | Horizontal speed at which the tooltip will approach the cursor |
+| `deltaY` | Vertical speed at which the tooltip will approach the cursor   |
+
+:::
+
 ## Tooltip, not Name 💬
 
 Display an item's tooltip instead of its name when you select that item on your hotbar.
@@ -15,7 +30,19 @@ This tweak adds particle effects to various GUIs, such as the anvil, enchantment
 
 <img class="inline-image" src="/assets/images/gui_particles.webp" width="520" height="293">
 
-In the config, you can enable/disable particle effects for each GUI individually, and adjust the velocity of particles in the Creative inventory.
+::: details configuration
+
+| Config                       | Description                                 |
+| -----------------------------| ------------------------------------------- |
+| `anvilScreenParticles`       | Anvil Screen particles                      |
+| `enchantmentScreenParticles` | Enchantment Screen particles                |
+| `furnaceScreenParticles`     | Furnace Screen particles                    |
+| `creativeScreenParticles`    | Creative Screen particles                   |
+| `creativeScreenParticlesVelX`| The X velocity of creative screen particles |
+| `gameModeSwitcherParticles`  | Game Mode Switcher particles                |
+| `bundleInputParticles`       | Bundle particles                            |
+
+:::
 
 ## No More Adventure 🏹
 

@@ -53,7 +53,7 @@ As of 0.7.0 you can pick:
 | Config          | Description                         |
 | --------------- | ----------------------------------- |
 | `chance`        | The chance for a lockpick to break. |
-| `breakAfterUse` | Should lockpicks break after use?   |
+| `breakAfterUse` | Break lockpicks after use.          |
 
 :::
 
@@ -88,6 +88,14 @@ Now throw a nether star and a totem onto the beacon and watch them ascend.
 
 You can also disable ascension in the config and create your own way to get the totem!
 
+::: details configuration
+
+| Config            | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `enableAscension` | Enable the Ascension ritual (for custom setups, i.e. modpacks) |
+
+:::
+
 ## Mending Tweaks ⚒️
 
 Tweaks mending by making it remove the "Too Expensive" error instead of repairing items via XP.
@@ -98,8 +106,14 @@ Inspired by TheMisterEpic's "This Minecraft Enchantment has been BROKEN for 3 YE
 
 ## Minecart Block Picking 🥒
 
-Allows you to "pick up" blocks using minecarts. All contents and some properties are copied to the cart.
-
-For the sake of balance, you can configure whether players can "pick up" spawners.
+Allows players to "pick up" blocks using minecarts. All contents and some properties are copied to the cart.
 
 <auto-video width="544" height="306" alt="The player shift and clicks a bunch of blocks, and they appear as their minecart versions in the inventory" src="/assets/videos/minecart-block-picking.webm"></auto-video>
+
+::: details configuration
+
+| Config           | Description               |
+| ---------------- | ------------------------- |
+| `spawnerPicking` | Allow picking up spawners |
+
+:::

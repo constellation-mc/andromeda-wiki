@@ -11,7 +11,7 @@ Currently, makes ghast explode upon death.
 
 | Config           | Description                      | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
 | ---------------- | -------------------------------- | ----------------------------------------------------------------------- |
-| `explodeOnDeath` | Should ghast explode upon death? | ✅                                                                      |
+| `explodeOnDeath` | Ghast's will explode upon death  | ✅                                                                      |
 | `explosionPower` | Ghast explosion power.           | ✅                                                                      |
 
 :::
@@ -62,6 +62,19 @@ In vanilla, only some zombies can pick up items. The higher the difficulty, the 
 - Melt When on Fire: Snowballs will melt when set on fire.
 - Build Up Layers: Snowballs freeze water and create layers of snow when hit.
 
+::: details configuration
+
+| Config           | Description                                                 | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+| -----------------| ----------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `freeze`         | Snowballs will freeze entities                              | ✅                                                                      |
+| `extinguish`     | Snowballs will extinguish entities on fire                  | ✅                                                                      |
+| `melt`           | Snowballs will melt when set on fire                        | ✅                                                                      |
+| `layers`         | Snowballs will build-up snow layers and freeze water on hit | ✅                                                                      |
+| `enableCooldown` | Throwing a snowball will apply a cooldown                   | ✅                                                                      |
+| `cooldown`       | The cooldown to apply                                       | ✅                                                                      |
+
+:::
+
 ## Slime Tweaks 💧
 
 Small slime related tweaks. Each option can be turned on or off.
@@ -69,6 +82,17 @@ Small slime related tweaks. Each option can be turned on or off.
 - Small slime will flee when they encounter an enemy.
 - Larger slime will merge with smaller ones. In combination with the previous option, this can cause some havoc.
 - Slime will slow down enemies when they attack.
+
+::: details configuration
+
+| Config     | Description                                      | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+| -----------| ------------------------------------------------ | ----------------------------------------------------------------------- |
+| `flee`     | Small slimes woll flee from enemies              | ✅                                                                      |
+| `merge`    | Slimes will try to merge                         | ✅                                                                      |
+| `maxMerge` | The max size a slime could grow to after merging | ✅                                                                      |
+| `slowness` | Apply slowness on collision with slimes          | ✅                                                                      |
+
+:::
 
 ## Bee Flower Duplication 🌺🐝
 
@@ -101,6 +125,15 @@ A few tweaks to make furnace minecarts just a bit better
 
 Optionally, Furnace minecarts will take fuel from nearby inventory carts, such as minecarts with chests, hoppers and possibly modded ones.
 If a cart has stopped, you have to push it with your hand before it moves.
+
+::: details configuration
+
+| Config            | Description                                              | [Expressions](https://constellation-mc.github.io/commander/Expressions) |
+| ----------------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `maxFuel`         | Controls the max amount of fuel the cart can hold        | ❌                                                                      |
+| `takeFuelWhenLow` | The cart will pick up fuel from nearby container carts   | ❌                                                                      |
+
+:::
 
 ## New Minecarts 🛤️
 
