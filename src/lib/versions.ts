@@ -16,6 +16,10 @@ const CATEGORIES = [
 
 export const VERSIONS: Version[] = [
   {
+    semver: "2.5.x",
+    categories: CATEGORIES,
+  },
+  {
     semver: "2.3.x",
     categories: CATEGORIES,
   },
