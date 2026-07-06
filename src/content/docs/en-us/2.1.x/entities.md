@@ -139,6 +139,8 @@ If a cart has stopped, it has to be pushed before it moves.
 
 ## New Minecarts 🛤️
 
+<img alt="A screenshot showing three different types of minecarts. From left to right: a note block minecart, an anvil minecart, a jukebox minecart." class="inline-image" src="/assets/images/minecarts.webp" width="520" height="293">
+
 - Anvil Minecart: It's heavy!
 - Note Block Minecart: Works the same way normal note blocks do.
 - Jukebox Minecart: Music on Rails!
@@ -146,7 +148,7 @@ If a cart has stopped, it has to be pushed before it moves.
 ## New Boats 🛶
 
 <br/>
-<img alt="A screenshot showing five different types of boats on grass. From left to right: a chest boat, a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." class="inline-image" src="/assets/images/boats.webp" width="520" height="293">
+<img alt="A screenshot showing four different types of boats. From left to right: a furnace-powered boat, a jukebox boat, a boat with a block of TNT, and a hopper boat." class="inline-image" src="/assets/images/boats.webp" width="520" height="293">
 
 - Boat with Furnace: I can't believe this – a furnace minecart on water!
 - Boat with Hopper: Quickly pulls items inside itself.
