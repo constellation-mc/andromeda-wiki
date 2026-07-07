@@ -66,10 +66,12 @@ The lockpick can open:
 
 ::: details configuration
 
-| Config          | Description                         |
-| --------------- | ----------------------------------- |
-| `chance`        | The chance for a lockpick to break. |
-| `breakAfterUse` | Break lockpicks after use.          |
+| Config              | Description                         |
+| ------------------- | ----------------------------------- |
+| `chance`            | The chance for a lockpick to break. |
+| `breakAfterUse`     | Break lockpicks after use.          |
+| `villagerInventory` | Allow opening villager inventories. |
+| `guardedLoot`       | Allow opening guarded containers.   |
 
 :::
 
