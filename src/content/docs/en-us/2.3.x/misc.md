@@ -66,29 +66,26 @@ Most configs will look something like this:
   "bootstrap": {
     "enabled": false
   },
-  "main": {
-  },
-  "game": {
-  },
-  "client": {
-  }
+  "main": {},
+  "game": {},
+  "client": {}
 }
 ```
 
-The `bootstrap` block controls if a module should be loaded at all 
-(indicated by "loading X modules" in the game logs). All modules have this option. 
+The `bootstrap` block controls if a module should be loaded at all
+(indicated by "loading X modules" in the game logs). All modules have this option.
 If a module cannot load for some reason, the mod will log the "forced module" state.
 
-The `main` block controls global module configs, such as item registrations and other things which are usually not 
+The `main` block controls global module configs, such as item registrations and other things which are usually not
 expected to change during a play session. Most configs in this category must be synced between a server and client, and usually require a restart to apply.
 
-The `game` block controls options that apply for stuff that happens in a world, during a play session. 
-Unlike the `main` block, these options are only required on the server (logical, works in singleplayer too). 
-Due to the nature of those options, they support overrides via [Data Packs](#data-pack-configs), per-dimension. 
-Some `game` configs support `available`, which act as `bootstrap.enabled`, but during gameplay, 
+The `game` block controls options that apply for stuff that happens in a world, during a play session.
+Unlike the `main` block, these options are only required on the server (logical, works in singleplayer too).
+Due to the nature of those options, they support overrides via [Data Packs](#data-pack-configs), per-dimension.
+Some `game` configs support `available`, which act as `bootstrap.enabled`, but during gameplay,
 so a module could be bootstrapped, but most logic in it is disabled.
 
-The `client` block controls options that are only relavant on the client, 
+The `client` block controls options that are only relavant on the client,
 and such are not required, or supported on the server.
 Usually related to visual stuff.
 

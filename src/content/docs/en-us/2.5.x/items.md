@@ -12,7 +12,7 @@ Also applies a cooldown of 0.5s and stops using the currently active shield
 
 ::: details configuration
 
-All damageable items are controlled by the `andromeda:fire_damageable` item tag. 
+All damageable items are controlled by the `andromeda:fire_damageable` item tag.
 Shields are checked using the `c:tools/shield` item tag.
 
 Items that don't have the `minecraft:max_damage` component will be skipped.

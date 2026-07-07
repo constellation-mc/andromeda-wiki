@@ -57,11 +57,11 @@ Well, this tweak forces you to kill every monster around the chest before you ca
 
 ::: details configuration
 
-| Config             | Description                                                    |
-| ------------------ | -------------------------------------------------------------- |
-| `range`            | The range a mob must be in, to be considered a guard.          |
-| `breakingHandler`  | Should guarded containers be unbreakable?                      |
-| `checkReach`       | Check if an enemy can reach the container (can find a path)    |
+| Config            | Description                                                 |
+| ----------------- | ----------------------------------------------------------- |
+| `range`           | The range a mob must be in, to be considered a guard.       |
+| `breakingHandler` | Should guarded containers be unbreakable?                   |
+| `checkReach`      | Check if an enemy can reach the container (can find a path) |
 
 :::
 
