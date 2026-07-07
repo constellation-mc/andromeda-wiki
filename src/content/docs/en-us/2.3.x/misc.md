@@ -55,6 +55,45 @@ or a URL, that is then combined with `[lang code].json` to request translation f
 
 :::
 
+## Config System 📂
+
+The base config files can be found in the `minecraft/configs/andromeda` folder. All configs are split per-module, besides a special `mod.json`, which has configs for the entire mod.
+
+Most configs will look something like this:
+
+```json
+{
+  "bootstrap": {
+    "enabled": false
+  },
+  "main": {
+  },
+  "game": {
+  },
+  "client": {
+  }
+}
+```
+
+The `bootstrap` block controls if a module should be loaded at all 
+(indicated by "loading X modules" in the game logs). All modules have this option. 
+If a module cannot load for some reason, the mod will log the "forced module" state.
+
+The `main` block controls global module configs, such as item registrations and other things which are usually not 
+expected to change during a play session. Most configs in this category must be synced between a server and client, and usually require a restart to apply.
+
+The `game` block controls options that apply for stuff that happens in a world, during a play session. 
+Unlike the `main` block, these options are only required on the server (logical, works in singleplayer too). 
+Due to the nature of those options, they support overrides via [Data Packs](#data-pack-configs), per-dimension. 
+Some `game` configs support `available`, which act as `bootstrap.enabled`, but during gameplay, 
+so a module could be bootstrapped, but most logic in it is disabled.
+
+The `client` block controls options that are only relavant on the client, 
+and such are not required, or supported on the server.
+Usually related to visual stuff.
+
+Client-side modules and `client` config blocks will never be created, read or written on the dedicated server (multiplayer).
+
 ## Data Pack Configs 🧩
 
 Datapack configs work similarly to recipes, but instead of the path being a recipe ID, it's Andromeda's module ID. For example: `config/andromeda/world/moist_control.json` becomes `data/{pack id}/andromeda/scoped_config/world/moist_control.json`. These work like overlays, where only the specified options are modified.
